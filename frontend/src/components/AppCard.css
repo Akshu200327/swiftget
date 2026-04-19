@@ -1,0 +1,114 @@
+.app-card {
+  display: block;
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s, transform 0.1s;
+  position: relative;
+}
+
+.app-card:hover {
+  border-color: var(--border-strong);
+  background: var(--bg-subtle);
+}
+
+.app-card.selected {
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+}
+
+.app-card:active {
+  transform: scale(0.98);
+}
+
+.app-card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.app-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+.app-card.selected .app-icon-wrap {
+  background: white;
+}
+
+.app-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.app-icon-fallback {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.app-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.app-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.3;
+  display: block;
+}
+
+.app-card.selected .app-name {
+  color: var(--accent);
+}
+
+.app-desc {
+  font-size: 11.5px;
+  color: var(--text-faint);
+  line-height: 1.4;
+  display: block;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.app-check {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.12s;
+  background: var(--bg);
+  flex-shrink: 0;
+}
+
+.app-card.selected .app-check {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}

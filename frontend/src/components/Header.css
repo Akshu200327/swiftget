@@ -1,0 +1,143 @@
+.header {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+}
+
+.brand-name {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.brand-tagline {
+  font-size: 12.5px;
+  color: var(--text-faint);
+  padding-left: 10px;
+  border-left: 1px solid var(--border);
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  color: var(--text-faint);
+  pointer-events: none;
+}
+
+.search-input {
+  height: 34px;
+  width: 220px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0 32px 0 32px;
+  font-size: 13.5px;
+  background: var(--bg-subtle);
+  color: var(--text);
+  transition: border-color 0.15s, background 0.15s;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: var(--accent-border);
+  background: var(--bg);
+}
+
+.search-input::placeholder {
+  color: var(--text-faint);
+}
+
+.search-clear {
+  position: absolute;
+  right: 8px;
+  color: var(--text-faint);
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.1s;
+}
+
+.search-clear:hover {
+  color: var(--text);
+}
+
+.os-picker {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.os-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 12px;
+  height: 34px;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--text-muted);
+  background: var(--bg-subtle);
+  border-right: 1px solid var(--border);
+  transition: background 0.1s, color 0.1s;
+}
+
+.os-btn:last-child {
+  border-right: none;
+}
+
+.os-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+.os-btn.active {
+  background: var(--bg);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .brand-tagline { display: none; }
+  .search-input { width: 160px; }
+  .os-btn span { display: none; }
+  .os-btn { padding: 0 10px; }
+}

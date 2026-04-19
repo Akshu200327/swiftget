@@ -1,0 +1,63 @@
+.catbar-outer {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.catbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.catbar-scroll {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 8px 0;
+}
+
+.catbar-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-muted);
+  white-space: nowrap;
+  transition: background 0.1s, color 0.1s;
+  flex-shrink: 0;
+}
+
+.cat-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+.cat-btn.active {
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-weight: 500;
+  border: 1px solid var(--accent-border);
+}
+
+.cat-count {
+  font-size: 11px;
+  background: var(--bg-hover);
+  color: var(--text-faint);
+  border-radius: 10px;
+  padding: 1px 6px;
+  font-weight: 400;
+}
+
+.cat-btn.active .cat-count {
+  background: var(--accent-border);
+  color: var(--accent);
+}
