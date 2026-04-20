@@ -2,18 +2,11 @@
   "name": "swiftget-frontend",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "start": "http-server . -p 3000 -c-1 --silent",
+    "build": "echo \"No build step needed for vanilla frontend\""
   },
-  "proxy": "http://localhost:3001",
-  "browserslist": {
-    "production": [">0.2%", "not dead"],
-    "development": ["last 1 chrome version"]
+  "dependencies": {
+    "http-server": "^14.1.1"
   }
 }
