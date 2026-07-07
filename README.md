@@ -8,11 +8,22 @@ A Ninite-inspired app installer with a clean light theme, 80+ apps, and real exe
 # 1. Install all dependencies (one time)
 npm run install:all
 
-# 2. Start both frontend + backend
-npm run dev
+# 2. Start the monolithic Node.js server
+npm start
 ```
 
-Then open **http://localhost:3000**
+Then open **http://localhost:5000**
+
+## Production Run
+
+Set `PORT` if your host provides one, then start from the project root:
+
+```bash
+npm run install:all
+npm start
+```
+
+The Express server serves `frontend/index.html`, `frontend/style.css`, `frontend/script.js`, optional `frontend/assets/*`, and the `/apps` API from the same process.
 
 ## What it does
 
@@ -47,14 +58,13 @@ swiftget/
 │       │   ├── SidePanel
 │       │   └── InstallerModal
 │       └── styles/
-└── package.json        # Root scripts with concurrently
+└── package.json        # Root scripts for the monolithic server
 ```
 
 ## API endpoints
 
 | Method | Route | Description |
 |--------|-------|-------------|
-| GET | /api/apps | All apps |
-| GET | /api/apps/category/:cat | Apps by category |
-| GET | /api/apps/:id | Single app |
-| POST | /api/generate | Generate installer script |
+| GET | /apps | All apps |
+
+Unknown non-API routes fall back to `frontend/index.html`.

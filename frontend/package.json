@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "http-server . -p 3000 -c-1 --silent",
+    "start": "echo \"Frontend is served by the backend Express server. Run npm start from the project root.\"",
     "build": "echo \"No build step needed for vanilla frontend\""
-  },
-  "dependencies": {
-    "http-server": "^14.1.1"
   }
 }

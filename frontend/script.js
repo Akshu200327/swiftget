@@ -7,7 +7,7 @@
   - generateScript(): builds command script from selected apps
 */
 
-const API_URL = "https://your-backend-url.onrender.com/apps";
+const API_URL = "/apps";
 const API_REQUEST_TIMEOUT_MS = 12000;
 const THEME_STORAGE_KEY = "swiftget-theme";
 
@@ -157,7 +157,6 @@ function mountIconWithFallback({
   iconUrl,
   altText,
   imageClassName,
-  fallbackClassName,
   fallbackText,
 }) {
   container.innerHTML = "";
@@ -605,7 +604,6 @@ function createAppCard(app) {
     iconUrl: app.icon,
     altText: app.name,
     imageClassName: "app-icon",
-    fallbackClassName: "app-icon-fallback",
     fallbackText: getInitials(app.name),
   });
 
@@ -772,7 +770,6 @@ function createSidePanel() {
         iconUrl: app.icon,
         altText: app.name,
         imageClassName: "panel-app-icon",
-        fallbackClassName: "panel-app-icon-fallback",
         fallbackText: getInitials(app.name),
       });
 
@@ -854,7 +851,7 @@ async function loadApps(selectedOs = state.os) {
   try {
     const response = await fetch(requestUrl, { signal: controller.signal });
     if (!response.ok) {
-      throw new Error(`Request failed with status ${response.status}`);
+      throw new Error(`Backend request failed: ${response.status} ${response.statusText || "Unknown status"}`);
     }
 
     const apps = await response.json();
@@ -870,11 +867,15 @@ async function loadApps(selectedOs = state.os) {
     state.apps = parsedApps;
   } catch (error) {
     if (error instanceof DOMException && error.name === "AbortError") {
-      state.error = "The request timed out. Please try again.";
+      state.error = `The request to ${requestUrl} timed out. Make sure the backend server is running.`;
     } else if (error instanceof SyntaxError) {
-      state.error = "The server returned invalid data. Check the backend response.";
+      state.error = `The backend at ${requestUrl} returned invalid JSON. Check apps.json and the server logs.`;
+    } else if (error instanceof TypeError) {
+      state.error = `Could not reach the backend at ${requestUrl}. Start the Node.js server and try again.`;
     } else {
-      state.error = error instanceof Error ? error.message : "Unable to load apps.";
+      state.error = error instanceof Error
+        ? error.message
+        : `Unable to load apps from ${requestUrl}.`;
     }
     state.apps = [];
   } finally {
