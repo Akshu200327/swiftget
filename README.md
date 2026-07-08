@@ -25,6 +25,18 @@ npm start
 
 The Express server serves `frontend/index.html`, `frontend/style.css`, `frontend/script.js`, optional `frontend/assets/*`, and the `/apps` API from the same process.
 
+## Railway Deployment
+
+Use the repository root as the Railway root directory.
+
+```text
+Root Directory: .
+Build Command: npm ci --omit=dev
+Start Command: npm start
+```
+
+The root `package.json` owns the production install because Railway installs dependencies from the configured root directory. The start script runs `node backend/server.js`, and the Express server serves both `frontend/` and `/apps`.
+
 ## What it does
 
 1. Browse 80+ apps across 10 categories
