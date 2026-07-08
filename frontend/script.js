@@ -10,6 +10,7 @@
 const API_URL = "/apps";
 const API_REQUEST_TIMEOUT_MS = 12000;
 const THEME_STORAGE_KEY = "swiftget-theme";
+const ONBOARDING_KEY    = "swiftget-onboarded";
 
 const CATEGORIES = [
   { id: "all", label: "All" },
@@ -102,6 +103,25 @@ const state = {
 // -----------------------------
 // Utilities
 // -----------------------------
+
+// Onboarding persistence helpers
+function getSavedOnboarding() {
+  try {
+    const raw = localStorage.getItem(ONBOARDING_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+function completeOnboarding(os) {
+  try {
+    localStorage.setItem(ONBOARDING_KEY, JSON.stringify({ os }));
+  } catch (e) {
+    console.warn("completeOnboarding(): localStorage unavailable", e);
+  }
+}
 
 function escapeHtml(value) {
   return String(value)
@@ -402,15 +422,30 @@ function createHeader() {
       <div class="header-inner">
         <div class="header-brand">
           <div class="brand-logo" aria-label="SwiftGet">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-              <rect width="22" height="22" rx="6" fill="#2563eb"></rect>
+            <svg width="20" height="20" viewBox="0 0 22 22" fill="none">
+              <rect width="22" height="22" rx="6" fill="currentColor"></rect>
               <path d="M6 11l3.5 3.5L16 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
           </div>
-          <span class="brand-name">SwiftGet</span>
-          <span class="brand-tagline">Get everything, instantly</span>
+          <div class="brand-copy">
+            <span class="brand-name">SwiftGet</span>
+            <span class="brand-tagline">Installer composer</span>
+          </div>
         </div>
+        <div class="header-divider" aria-hidden="true"></div>
       <div class="header-controls">
+        <div class="search-wrap">
+          <svg class="search-icon" width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"></circle>
+            <path d="M10.5 10.5L13.5 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+          <input id="searchInput" type="text" class="search-input" placeholder="Search apps, tools, launchers..." />
+          <button id="searchClearBtn" class="search-clear hidden" aria-label="Clear search">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+          </button>
+        </div>
         <button
           id="themeToggleBtn"
           class="theme-toggle"
@@ -419,21 +454,9 @@ function createHeader() {
           aria-pressed="${state.theme === "dark"}"
           title="Toggle theme"
         >
-          <span class="theme-toggle-track"><span class="theme-toggle-thumb"></span></span>
           <span class="theme-toggle-text">${state.theme === "dark" ? "Dark" : "Light"}</span>
+          <span class="theme-toggle-track"><span class="theme-toggle-thumb"></span></span>
         </button>
-        <div class="search-wrap">
-          <svg class="search-icon" width="15" height="15" viewBox="0 0 15 15" fill="none">
-            <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"></circle>
-            <path d="M10.5 10.5L13.5 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-          </svg>
-          <input id="searchInput" type="text" class="search-input" placeholder="Search apps..." />
-          <button id="searchClearBtn" class="search-clear hidden" aria-label="Clear search">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-            </svg>
-          </button>
-        </div>
       </div>
     </div>
   `;
@@ -478,6 +501,140 @@ function createHeader() {
   themeToggleBtn.addEventListener("click", toggleTheme);
 
   return wrapper;
+}
+
+// -----------------------------
+// Onboarding screens
+// -----------------------------
+
+/**
+ * Splash screen — shown for ~1.2 s on every load, then fades out.
+ * Returns a Promise that resolves once the fade-out completes.
+ */
+function showSplashScreen() {
+  return new Promise((resolve) => {
+    const splash = document.createElement("div");
+    splash.className = "splash-overlay";
+    splash.setAttribute("role", "status");
+    splash.setAttribute("aria-label", "Loading SwiftGet");
+    splash.innerHTML = `
+      <div class="splash-logo" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 22 22" fill="none">
+          <rect width="22" height="22" rx="6" fill="currentColor"></rect>
+          <path d="M6 11l3.5 3.5L16 7" stroke="white" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </div>
+      <span class="splash-name">SwiftGet</span>
+      <span class="splash-sub">Build custom installation bundles in seconds.</span>
+      <div class="splash-loader" aria-hidden="true">
+        <span class="splash-dot"></span>
+        <span class="splash-dot"></span>
+        <span class="splash-dot"></span>
+      </div>
+    `;
+    document.body.appendChild(splash);
+
+    // Hold for 1200 ms, then add the fade-out class.
+    // After the 280 ms CSS transition finishes (+ small buffer), remove and resolve.
+    // NOTE: We use pure setTimeout — NOT animationend — because animationend
+    // bubbles up from child elements (splash-dot infinite animations) and would
+    // fire the cleanup prematurely, making the splash vanish in milliseconds.
+    setTimeout(() => {
+      splash.classList.add("splash-out");
+      setTimeout(() => {
+        splash.remove();
+        resolve();
+      }, 320); // 280 ms animation + 40 ms buffer
+    }, 1200);
+  });
+}
+
+/**
+ * Welcome / about screen — shown only on first visit.
+ * Returns a Promise that resolves when the user clicks Continue.
+ */
+function showWelcomeScreen() {
+  return new Promise((resolve) => {
+    const overlay = document.createElement("div");
+    overlay.className = "welcome-overlay";
+
+    overlay.innerHTML = `
+      <div class="welcome-card" role="dialog"
+           aria-label="Welcome to SwiftGet" aria-modal="true">
+
+        <div class="welcome-head">
+          <div class="welcome-logo" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <rect width="22" height="22" rx="6" fill="currentColor"></rect>
+              <path d="M6 11l3.5 3.5L16 7" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <span class="welcome-wordmark">SwiftGet</span>
+        </div>
+
+        <div class="welcome-hero">
+          <h1 class="welcome-title">Welcome to SwiftGet</h1>
+          <p class="welcome-desc">
+            SwiftGet helps you create custom Windows installation bundles by
+            selecting your favorite applications. Instead of downloading software
+            one by one, simply choose the apps you need and generate a
+            ready-to-use installation script.
+          </p>
+        </div>
+
+        <ul class="welcome-benefits" role="list" aria-label="Features">
+          <li class="welcome-benefit">
+            <span class="welcome-benefit-dot" aria-hidden="true"></span>
+            Fast setup — select and generate in seconds
+          </li>
+          <li class="welcome-benefit">
+            <span class="welcome-benefit-dot" aria-hidden="true"></span>
+            One-click installer script generation
+          </li>
+          <li class="welcome-benefit">
+            <span class="welcome-benefit-dot" aria-hidden="true"></span>
+            Popular developer &amp; productivity apps
+          </li>
+          <li class="welcome-benefit">
+            <span class="welcome-benefit-dot" aria-hidden="true"></span>
+            Clean and minimal experience
+          </li>
+        </ul>
+
+        <div class="welcome-footer">
+          <p>Made with ❤️ by</p>
+          <p><strong>Akshit Gehlot</strong> &amp; <strong>Akshat Pareek</strong></p>
+        </div>
+
+        <div class="welcome-actions">
+          <button class="welcome-btn" id="welcomeContinueBtn" type="button">
+            Continue <em class="welcome-btn-arrow">→</em>
+          </button>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    // Focus the continue button for keyboard accessibility
+    requestAnimationFrame(() => {
+      const btn = overlay.querySelector("#welcomeContinueBtn");
+      if (btn) btn.focus();
+    });
+
+    overlay.querySelector("#welcomeContinueBtn").addEventListener("click", () => {
+      overlay.classList.add("welcome-out");
+      // Use setTimeout — NOT animationend — because animationend from the inner
+      // .welcome-card element (welcomeCardIn) bubbles to .welcome-overlay and
+      // could misfire the cleanup before the user even sees the screen.
+      setTimeout(() => {
+        overlay.remove();
+        resolve();
+      }, 280); // 220 ms animation + 60 ms buffer
+    });
+  });
 }
 
 function showOsSelectionOverlay() {
@@ -545,6 +702,8 @@ function createFilters() {
 
   const scroll = document.createElement("div");
   scroll.className = "catbar-scroll";
+  scroll.setAttribute("role", "tablist");
+  scroll.setAttribute("aria-label", "App categories");
 
   const counts = getCategoryCounts();
 
@@ -552,6 +711,9 @@ function createFilters() {
     const isActive = state.activeCategory === category.id;
     const button = document.createElement("button");
     button.className = `cat-btn${isActive ? " active" : ""}`;
+    button.type = "button";
+    button.setAttribute("role", "tab");
+    button.setAttribute("aria-selected", String(isActive));
     button.textContent = category.label;
 
     if (category.id !== "all" && counts[category.id]) {
@@ -579,22 +741,27 @@ function createAppCard(app) {
   const isSelected = state.selectedIds.has(app.id);
   const searchQuery = state.searchText.trim();
   card.className = `app-card${isSelected ? " selected" : ""}`;
+  card.type = "button";
   card.title = app.name;
   card.setAttribute("aria-pressed", String(isSelected));
 
-  const iconBg = app.color ? `${app.color}18` : "var(--bg-soft)";
-  const iconBorder = app.color ? `${app.color}28` : "var(--border)";
+  const iconBg = app.color ? `${app.color}18` : "var(--surface-muted)";
+  const iconBorder = app.color ? `${app.color}28` : "var(--line)";
 
+  // UI CHANGE: removed app-category label; moved app-select-indicator to top-right
   card.innerHTML = `
     <div class="app-card-inner">
-      <div class="app-icon-wrap" style="background:${iconBg};border-color:${iconBorder}"></div>
+      <div class="app-card-top">
+        <div class="app-icon-wrap" style="background:${iconBg};border-color:${iconBorder}"></div>
+        <div class="app-select-indicator" aria-hidden="true">
+          <span class="app-select-mark"></span>
+        </div>
+      </div>
       <div class="app-info">
         <span class="app-name">${highlightMatches(app.name, searchQuery)}</span>
         <span class="app-desc">${highlightMatches(app.desc || "", searchQuery)}</span>
       </div>
-      <div class="app-check">
-        <input class="app-checkbox" type="checkbox" ${isSelected ? "checked" : ""} aria-label="Select ${escapeHtml(app.name)}" />
-      </div>
+      <input class="app-checkbox" type="checkbox" ${isSelected ? "checked" : ""} tabindex="-1" aria-label="Select ${escapeHtml(app.name)}" />
     </div>
   `;
 
@@ -668,7 +835,7 @@ function renderApps() {
     popularSection.innerHTML = `
       <div class="cat-heading-row">
         <span class="cat-dot" style="background:#2563eb"></span>
-        <h2 class="cat-heading">Popular Apps & Software</h2>
+        <h2 class="cat-heading">Popular Apps &amp; Software</h2>
       </div>
     `;
 
@@ -711,21 +878,34 @@ function createSidePanel() {
   panel.className = "side-panel";
   const apps = getSelectedApps();
   const count = apps.length;
+  // Estimate ~80 MB per app as a rough average
+  const estMB = count * 80;
+  const estSizeLabel = count === 0 ? "—" : estMB >= 1024 ? `~${(estMB / 1024).toFixed(1)} GB` : `~${estMB} MB`;
 
   panel.innerHTML = `
     <div class="panel-header">
-      <span class="panel-title">Your bundle</span>
+      <div class="panel-heading">
+        <span class="panel-kicker">Installer</span>
+        <span class="panel-title">Bundle</span>
+      </div>
+      <span class="panel-count">${count}</span>
       ${count > 0 ? '<button class="panel-clear">Clear all</button>' : ""}
     </div>
+    <div class="panel-body">
     ${
       count === 0
         ? `
       <div class="panel-empty">
-        <p class="panel-empty-text">Click apps to add them to your bundle</p>
+        <p class="panel-empty-title">No apps selected</p>
+        <p class="panel-empty-text">Click any app to add it to your installer bundle.</p>
       </div>
     `
         : `
       <div class="panel-apps"></div>
+      <div class="panel-meta">
+        <span class="panel-meta-label">Est. size</span>
+        <span class="panel-meta-value">${estSizeLabel}</span>
+      </div>
       ${state.os === "windows" ? `
       <div class="method-picker">
         <p class="method-label">Install via</p>
@@ -738,7 +918,7 @@ function createSidePanel() {
     `
     }
     <button class="get-btn ${count === 0 ? "disabled" : ""}" ${count === 0 ? "disabled" : ""}>
-      ${count === 0 ? "Select apps first" : `Generate Script <span class="get-btn-count">${count}</span>`}
+      ${count === 0 ? "Select apps first" : `Generate script <span class="get-btn-count">${count}</span>`}
     </button>
     <div class="script-result ${state.generatedScript ? "" : "hidden"}">
       <p class="script-result-title">Install commands</p>
@@ -747,6 +927,12 @@ function createSidePanel() {
         <button class="script-action-btn script-copy-btn" type="button">Copy Script</button>
         <button class="script-action-btn script-download-btn" type="button">Download File</button>
       </div>
+    </div>
+    </div>
+    <div class="panel-about">
+      <p class="panel-about-product">SwiftGet</p>
+      <p class="panel-about-desc">Create clean installation scripts for your favorite applications.</p>
+      <p class="panel-about-credit">Made with ❤️ by <strong>Akshit Gehlot</strong> &amp; <strong>Akshat Pareek</strong></p>
     </div>
   `;
 
@@ -758,10 +944,14 @@ function createSidePanel() {
       row.style.animationDelay = `${index * 40}ms`;
       row.innerHTML = `
         <div class="panel-app-left">
-          <span class="panel-app-icon-wrap" style="background:${app.color ? `${app.color}18` : "var(--bg-soft)"};border-color:${app.color ? `${app.color}28` : "var(--border)"}"></span>
+          <span class="panel-app-icon-wrap" style="background:${app.color ? `${app.color}18` : "var(--surface-muted)"};border-color:${app.color ? `${app.color}28` : "var(--line)"}"></span>
           <span class="panel-app-name">${escapeHtml(app.name)}</span>
         </div>
-        <button class="panel-app-remove" aria-label="Remove ${escapeHtml(app.name)}">✕</button>
+        <button class="panel-app-remove" type="button" aria-label="Remove ${escapeHtml(app.name)}">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </button>
       `;
 
       const iconWrap = row.querySelector(".panel-app-icon-wrap");
@@ -887,6 +1077,16 @@ async function loadApps(selectedOs = state.os) {
 
 window.addEventListener("DOMContentLoaded", async () => {
   applyTheme(getInitialTheme(), { persist: false });
+
+  // Step 1: Splash screen (always shown)
+  await showSplashScreen();
+
+  // Step 2: Welcome / About screen (always shown)
+  await showWelcomeScreen();
+
+  // Step 3: OS selection → app (handled by showOsSelectionOverlay as before)
   renderApp();
   showOsSelectionOverlay();
 });
+
+
