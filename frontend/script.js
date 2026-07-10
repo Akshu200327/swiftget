@@ -361,16 +361,95 @@ function buildAppsApiUrl(selectedOs = state.os) {
 function generateScript(apps) {
   const manager = getCommandManager();
 
-  return apps
-    .map((app) => {
+  if (manager === "winget") {
+    // Build a robust .bat that:
+    // 1. Never stops early on failure (no &&/||, no implicit exit).
+    // 2. Uses --id --exact so winget cannot match the wrong package.
+    // 3. Accepts all license agreements non-interactively.
+    // 4. Uses --silent to suppress winget's own progress UI in a batch context.
+    // 5. Checks ERRORLEVEL after each install and reports SUCCESS or the exit code.
+    // 6. Prints a summary count at the end.
+    const lines = [
+      "@echo off",
+      "setlocal EnableDelayedExpansion",
+      "",
+      "set SUCCESSFUL=0",
+      "set FAILED=0",
+      "",
+    ];
+
+
+    apps.forEach((app) => {
       const packageId = getInstallPackageId(app);
-      if (manager === "choco") return `choco install ${packageId} -y`;
-      if (manager === "brew") return `brew install ${packageId}`;
-      if (manager === "apt") return `sudo apt install -y ${packageId}`;
-      return `winget install ${packageId}`;
-    })
-    .join("\n");
+      const label = app.name || packageId;
+      lines.push(`echo Installing ${label}...`);
+      lines.push(
+        `winget install --id ${packageId} --exact --accept-package-agreements --accept-source-agreements --silent`
+      );
+      // Capture ERRORLEVEL immediately — cmd resets it on the next command.
+      lines.push("set EXIT_CODE=%ERRORLEVEL%");
+      lines.push("if %EXIT_CODE% EQU 0 (");
+      lines.push("    echo   SUCCESS");
+      lines.push("    set /A SUCCESSFUL+=1");
+      lines.push(") else (");
+      lines.push("    echo   FAILED  ^(winget exit code: %EXIT_CODE%^)");
+      lines.push("    set /A FAILED+=1");
+      lines.push(")");
+      lines.push("");
+    });
+
+    lines.push("echo.");
+    lines.push("echo ========================");
+    lines.push("echo Successful installs: %SUCCESSFUL%");
+    lines.push("echo Failed installs:     %FAILED%");
+    lines.push("echo ========================");
+    lines.push("echo.");
+    lines.push("echo ----------------------------------------");
+    lines.push("echo If any application failed,");
+    lines.push("echo try running this installer as Administrator");
+    lines.push("echo and run it again.");
+    lines.push("echo ----------------------------------------");
+    lines.push("echo.");
+    lines.push("pause");
+    lines.push("endlocal");
+
+    return lines.join("\r\n");
+  }
+
+
+  if (manager === "choco") {
+    return apps
+      .map((app) => {
+        const packageId = getInstallPackageId(app);
+        return `choco install ${packageId} -y`;
+      })
+      .join("\n");
+  }
+
+  if (manager === "brew") {
+    return apps
+      .map((app) => {
+        const packageId = app.brewId || app.id || app.name || "";
+        return `brew install ${packageId}`;
+      })
+      .join("\n");
+  }
+
+  if (manager === "apt") {
+    return apps
+      .map((app) => {
+        const packageId = app.aptId || app.id || app.name || "";
+        return `sudo apt-get install -y ${packageId}`;
+      })
+      .join("\n");
+  }
+
+  // Fallback
+  return apps
+    .map((app) => `winget install --id ${getInstallPackageId(app)} --exact --accept-package-agreements --accept-source-agreements --silent`)
+    .join("\r\n");
 }
+
 
 async function copyGeneratedScript(event) {
   if (!state.generatedScript) return;

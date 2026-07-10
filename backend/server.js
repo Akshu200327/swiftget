@@ -105,6 +105,11 @@ app.use(helmet({
 app.use(compression());
 app.use(express.json());
 
+/* ---------- Health check (required by Render & Railway) ---------- */
+app.get("/health", (_req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+
 app.get("/apps", (req, res) => {
   res.json(apps);
 });
@@ -142,7 +147,25 @@ app.get("*", (req, res) => {
   res.sendFile(INDEX_FILE_PATH);
 });
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server started on http://localhost:${PORT}`);
   console.log(`Serving frontend from ${FRONTEND_DIR}`);
 });
+
+/* ---------- Graceful shutdown (Render sends SIGTERM on deploy/restart) ---------- */
+function shutdown(signal) {
+  console.log(`Received ${signal}. Closing server gracefully...`);
+  server.close(() => {
+    console.log("Server closed. Exiting.");
+    process.exit(0);
+  });
+
+  // Force-exit after 10 s if in-flight requests stall
+  setTimeout(() => {
+    console.error("Shutdown timed out. Force-exiting.");
+    process.exit(1);
+  }, 10_000).unref();
+}
+
+process.on("SIGTERM", () => shutdown("SIGTERM"));
+process.on("SIGINT",  () => shutdown("SIGINT"));
