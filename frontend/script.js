@@ -343,8 +343,94 @@ function getInstallPackageId(app) {
   return app.wingetId || app.packageId || app.id || app.name || "";
 }
 
+
+const CHOCO_PACKAGE_IDS = {
+  "Google.Chrome": "googlechrome",
+  "Microsoft.Edge": "microsoft-edge",
+  "Brave.Brave": "brave",
+  "Mozilla.Firefox": "firefox",
+  "Microsoft.VisualStudioCode": "vscode",
+  "Git.Git": "git",
+  "OpenJS.NodeJS": "nodejs",
+  "Python.Python.3.12": "python",
+  "Docker.DockerDesktop": "docker-desktop",
+  "VideoLAN.VLC": "vlc",
+  "Spotify.Spotify": "spotify",
+  "OBSProject.OBSStudio": "obs-studio",
+  "Notion.Notion": "notion",
+  "SlackTechnologies.Slack": "slack",
+  "Discord.Discord": "discord",
+  "Zoom.Zoom": "zoom",
+  "Postman.Postman": "postman",
+  "FileZilla.FileZilla": "filezilla",
+  "RARLab.WinRAR": "winrar",
+  "7zip.7zip": "7zip",
+  "Figma.Figma": "figma",
+  "Valve.Steam": "steam",
+  "EpicGames.EpicGamesLauncher": "epicgameslauncher",
+  "Google.Drive": "googledrive",
+  "Dropbox.Dropbox": "dropbox",
+  "Notepad++.Notepad++": "notepadplusplus",
+  "Microsoft.Teams": "microsoft-teams",
+  "Microsoft.PowerToys": "powertoys",
+  "Microsoft.OneDrive": "onedrive",
+  "GitHub.GitHubDesktop": "github-desktop",
+  "JetBrains.IntelliJIDEA.Community": "intellijidea-community",
+  "JetBrains.PyCharm.Community": "pycharm-community",
+  "Google.AndroidStudio": "androidstudio",
+  "GoLang.Go": "golang",
+  "Rustlang.Rustup": "rustup.install",
+  "DBeaver.DBeaver": "dbeaver",
+  "Kong.Insomnia": "insomnia-rest-api-client",
+  "KDE.Krita": "krita",
+  "KDE.Kdenlive": "kdenlive",
+  "KDE.KDiff3": "kdiff3",
+  "BlenderFoundation.Blender": "blender",
+  "Inkscape.Inkscape": "inkscape",
+  "Mozilla.Thunderbird": "thunderbird",
+  "Telegram.TelegramDesktop": "telegram",
+  "Bitwarden.Bitwarden": "bitwarden",
+  "WiresharkFoundation.Wireshark": "wireshark",
+  "qBittorrent.qBittorrent": "qbittorrent",
+  "Rufus.Rufus": "rufus",
+  "ShareX.ShareX": "sharex",
+};
+
+function getChocolateyPackageId(app) {
+  const explicitId = app.chocoId || app.packageId;
+  if (explicitId) return explicitId;
+  if (CHOCO_PACKAGE_IDS[app.wingetId]) return CHOCO_PACKAGE_IDS[app.wingetId];
+  if (CHOCO_PACKAGE_IDS[app.id]) return CHOCO_PACKAGE_IDS[app.id];
+
+  return String(app.name || app.id || "")
+    .toLowerCase()
+    .replace(/\+\+/g, "plusplus")
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function escapeBatchText(value) {
+  return String(value || "")
+    .replace(/\^/g, "^^")
+    .replace(/%/g, "%%")
+    .replace(/&/g, "^&")
+    .replace(/</g, "^<")
+    .replace(/>/g, "^>")
+    .replace(/\|/g, "^|")
+    .replace(/\(/g, "^(")
+    .replace(/\)/g, "^)");
+}
+
+function quoteBatchArg(value) {
+  return "\"" + String(value || "").replace(/"/g, "") + "\"";
+}
+
 function getCommandManager() {
-  if (state.os === "windows") return state.method === "choco" ? "choco" : "winget";
+  if (state.os === "windows") {
+    if (state.method === "choco") return "choco";
+    return "winget";
+  }
   if (state.os === "macos") return "brew";
   if (state.os === "linux") return "apt";
   return "winget";
@@ -370,9 +456,7 @@ function generateScript(apps) {
     // 5. Checks ERRORLEVEL after each install and reports SUCCESS or the exit code.
     // 6. Prints a summary count at the end.
     const lines = [
-      "@echo off",
-      "setlocal EnableDelayedExpansion",
-      "",
+      ...getWindowsScriptHeader(),
       "set SUCCESSFUL=0",
       "set FAILED=0",
       "",
@@ -382,9 +466,9 @@ function generateScript(apps) {
     apps.forEach((app) => {
       const packageId = getInstallPackageId(app);
       const label = app.name || packageId;
-      lines.push(`echo Installing ${label}...`);
+      lines.push("echo Installing " + escapeBatchText(label) + "...");
       lines.push(
-        `winget install --id ${packageId} --exact --accept-package-agreements --accept-source-agreements --silent`
+        "winget install --id " + quoteBatchArg(packageId) + " --exact --accept-package-agreements --accept-source-agreements --silent"
       );
       // Capture ERRORLEVEL immediately — cmd resets it on the next command.
       lines.push("set EXIT_CODE=%ERRORLEVEL%");
@@ -398,32 +482,14 @@ function generateScript(apps) {
       lines.push("");
     });
 
-    lines.push("echo.");
-    lines.push("echo ========================");
-    lines.push("echo Successful installs: %SUCCESSFUL%");
-    lines.push("echo Failed installs:     %FAILED%");
-    lines.push("echo ========================");
-    lines.push("echo.");
-    lines.push("echo ----------------------------------------");
-    lines.push("echo If any application failed,");
-    lines.push("echo try running this installer as Administrator");
-    lines.push("echo and run it again.");
-    lines.push("echo ----------------------------------------");
-    lines.push("echo.");
-    lines.push("pause");
-    lines.push("endlocal");
+    lines.push(...getWindowsScriptFooter());
 
     return lines.join("\r\n");
   }
 
 
   if (manager === "choco") {
-    return apps
-      .map((app) => {
-        const packageId = getInstallPackageId(app);
-        return `choco install ${packageId} -y`;
-      })
-      .join("\n");
+    return generateChocolateyScript(apps);
   }
 
   if (manager === "brew") {
@@ -446,8 +512,88 @@ function generateScript(apps) {
 
   // Fallback
   return apps
-    .map((app) => `winget install --id ${getInstallPackageId(app)} --exact --accept-package-agreements --accept-source-agreements --silent`)
+    .map((app) => "winget install --id " + quoteBatchArg(getInstallPackageId(app)) + " --exact --accept-package-agreements --accept-source-agreements --silent")
     .join("\r\n");
+}
+
+
+
+function getWindowsScriptHeader() {
+  return [
+    "@echo off",
+    "setlocal",
+    "",
+    "net session >nul 2>nul",
+    "if %ERRORLEVEL% EQU 0 goto :admin_verified",
+    "echo Requesting administrator privileges...",
+    "powershell -NoProfile -ExecutionPolicy Bypass -Command \"Start-Process -FilePath $env:ComSpec -ArgumentList '/c','\\\"'%~f0'\\\"' -Verb RunAs -Wait\"",
+    "exit /b",
+    "",
+    ":admin_verified",
+    "net session >nul 2>nul",
+    "if %ERRORLEVEL% EQU 0 goto :admin_ready",
+    "echo Elevation verification failed.",
+    "pause",
+    "exit /b 1",
+    "",
+    ":admin_ready",
+    "echo Elevation confirmed.",
+    "echo.",
+    "",
+  ];
+}
+
+function getWindowsScriptFooter() {
+  return [
+    "echo.",
+    "echo ========================",
+    "echo Successful installs: %SUCCESSFUL%",
+    "echo Failed installs:     %FAILED%",
+    "echo ========================",
+    "echo.",
+    "pause",
+    "endlocal",
+  ];
+}
+
+function getChocolateyBootstrapLines() {
+  return [
+    "where choco >nul 2>nul",
+    "if %ERRORLEVEL% EQU 0 goto :choco_ready",
+    "echo Chocolatey was not found. Installing Chocolatey...",
+    "powershell -NoProfile -ExecutionPolicy Bypass -Command \"Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))\"",
+    "where choco >nul 2>nul",
+    "if %ERRORLEVEL% EQU 0 goto :choco_ready",
+    "echo Chocolatey installation failed after elevation.",
+    "pause",
+    "exit /b 1",
+    ":choco_ready",
+    "echo.",
+    "",
+  ];
+}
+
+function generateChocolateyScript(apps) {
+  const lines = [...getWindowsScriptHeader(), "set SUCCESSFUL=0", "set FAILED=0", "", ...getChocolateyBootstrapLines()];
+
+  apps.forEach((app) => {
+    const packageId = getChocolateyPackageId(app);
+    const label = app.name || packageId;
+    lines.push("echo Installing " + escapeBatchText(label) + "...");
+    lines.push("choco install " + quoteBatchArg(packageId) + " -y --no-progress");
+    lines.push("set EXIT_CODE=%ERRORLEVEL%");
+    lines.push("if %EXIT_CODE% EQU 0 (");
+    lines.push("    echo   SUCCESS");
+    lines.push("    set /A SUCCESSFUL+=1");
+    lines.push(") else (");
+    lines.push("    echo   FAILED  ^(Chocolatey exit code: %EXIT_CODE%^)" );
+    lines.push("    set /A FAILED+=1");
+    lines.push(")");
+    lines.push("");
+  });
+
+  lines.push(...getWindowsScriptFooter());
+  return lines.join("\r\n");
 }
 
 
@@ -1062,7 +1208,7 @@ function createSidePanel() {
   panel.querySelectorAll(".method-btn").forEach((button) => {
     button.addEventListener("click", () => {
       state.method = button.dataset.method;
-      state.generatedScript = "";
+      state.generatedScript = apps.length > 0 ? generateScript(apps) : "";
       renderApp();
     });
   });

@@ -1,0 +1,1321 @@
+[
+  {
+    "id": "Google.Chrome",
+    "name": "Google Chrome",
+    "candidates": [
+      "googlechrome",
+      "google-chrome",
+      "chrome"
+    ]
+  },
+  {
+    "id": "Microsoft.Edge",
+    "name": "Microsoft Edge",
+    "candidates": [
+      "microsoft-edge",
+      "edge"
+    ]
+  },
+  {
+    "id": "Brave.Brave",
+    "name": "Brave",
+    "candidates": [
+      "brave",
+      "brave-browser",
+      "brave-brave"
+    ]
+  },
+  {
+    "id": "Mozilla.Firefox",
+    "name": "Mozilla Firefox",
+    "candidates": [
+      "firefox",
+      "mozilla-firefox"
+    ]
+  },
+  {
+    "id": "Opera.Opera",
+    "name": "Opera",
+    "candidates": [
+      "opera",
+      "opera-opera"
+    ]
+  },
+  {
+    "id": "Vivaldi.Vivaldi",
+    "name": "Vivaldi",
+    "candidates": [
+      "vivaldi",
+      "vivaldi-vivaldi"
+    ]
+  },
+  {
+    "id": "TorProject.TorBrowser",
+    "name": "Tor Browser",
+    "candidates": [
+      "tor-browser",
+      "torproject-torbrowser",
+      "torbrowser"
+    ]
+  },
+  {
+    "id": "Waterfox.Waterfox",
+    "name": "Waterfox",
+    "candidates": [
+      "waterfox",
+      "waterfox-waterfox"
+    ]
+  },
+  {
+    "id": "Maxthon.Maxthon",
+    "name": "Maxthon",
+    "candidates": [
+      "maxthon",
+      "maxthon-maxthon"
+    ]
+  },
+  {
+    "id": "Yandex.Browser",
+    "name": "Yandex Browser",
+    "candidates": [
+      "yandexbrowser",
+      "yandex",
+      "yandex-browser",
+      "browser"
+    ]
+  },
+  {
+    "id": "Microsoft.VisualStudioCode",
+    "name": "Visual Studio Code",
+    "candidates": [
+      "vscode",
+      "visual-studio-code",
+      "microsoft-visualstudiocode",
+      "visualstudiocode"
+    ]
+  },
+  {
+    "id": "JetBrains.IntelliJIDEA.Community",
+    "name": "IntelliJ IDEA Community",
+    "candidates": [
+      "intellijidea-community",
+      "intellij-idea-ce",
+      "intellij-idea-community",
+      "jetbrains-intellijidea-community",
+      "community"
+    ]
+  },
+  {
+    "id": "Git.Git",
+    "name": "Git",
+    "candidates": [
+      "git",
+      "git-git"
+    ]
+  },
+  {
+    "id": "OpenJS.NodeJS",
+    "name": "Node.js",
+    "candidates": [
+      "nodejs",
+      "node",
+      "node-js",
+      "openjs-nodejs"
+    ]
+  },
+  {
+    "id": "Python.Python.3.12",
+    "name": "Python",
+    "candidates": [
+      "python",
+      "python-python-3-12",
+      "12",
+      "python-3-12"
+    ]
+  },
+  {
+    "id": "Docker.DockerDesktop",
+    "name": "Docker Desktop",
+    "candidates": [
+      "docker-desktop",
+      "docker",
+      "docker-dockerdesktop",
+      "dockerdesktop"
+    ]
+  },
+  {
+    "id": "Postman.Postman",
+    "name": "Postman",
+    "candidates": [
+      "postman",
+      "postman-postman"
+    ]
+  },
+  {
+    "id": "FileZilla.FileZilla",
+    "name": "FileZilla",
+    "candidates": [
+      "filezilla",
+      "filezilla-filezilla"
+    ]
+  },
+  {
+    "id": "GitHub.GitHubDesktop",
+    "name": "GitHub Desktop",
+    "candidates": [
+      "github-desktop",
+      "github",
+      "github-githubdesktop",
+      "githubdesktop"
+    ]
+  },
+  {
+    "id": "SublimeHQ.SublimeText.4",
+    "name": "Sublime Text",
+    "candidates": [
+      "sublimetext4",
+      "sublime-text",
+      "sublimehq-sublimetext-4",
+      "4",
+      "sublimetext-4"
+    ]
+  },
+  {
+    "id": "VideoLAN.VLC",
+    "name": "VLC",
+    "candidates": [
+      "vlc",
+      "videolan-vlc"
+    ]
+  },
+  {
+    "id": "Spotify.Spotify",
+    "name": "Spotify",
+    "candidates": [
+      "spotify",
+      "spotify-spotify"
+    ]
+  },
+  {
+    "id": "OBSProject.OBSStudio",
+    "name": "OBS Studio",
+    "candidates": [
+      "obs-studio",
+      "obs",
+      "obsproject-obsstudio",
+      "obsstudio"
+    ]
+  },
+  {
+    "id": "Audacity.Audacity",
+    "name": "Audacity",
+    "candidates": [
+      "audacity",
+      "audacity-audacity"
+    ]
+  },
+  {
+    "id": "HandBrake.HandBrake",
+    "name": "HandBrake",
+    "candidates": [
+      "handbrake",
+      "handbrake-handbrake"
+    ]
+  },
+  {
+    "id": "Plex.Plex",
+    "name": "Plex",
+    "candidates": [
+      "plex",
+      "plex-plex"
+    ]
+  },
+  {
+    "id": "Kodi.Kodi",
+    "name": "Kodi",
+    "candidates": [
+      "kodi",
+      "kodi-kodi",
+      "xbmcfoundation-kodi"
+    ]
+  },
+  {
+    "id": "AIMP.AIMP",
+    "name": "AIMP",
+    "candidates": [
+      "aimp",
+      "aimp-aimp"
+    ]
+  },
+  {
+    "id": "MPV.MPV",
+    "name": "mpv",
+    "candidates": [
+      "mpv",
+      "mpv-mpv",
+      "mpvnet-mpvnet",
+      "mpvnet"
+    ]
+  },
+  {
+    "id": "Foobar2000.Foobar2000",
+    "name": "foobar2000",
+    "candidates": [
+      "foobar2000",
+      "foobar2000-foobar2000",
+      "peterpawlowski-foobar2000"
+    ]
+  },
+  {
+    "id": "Notion.Notion",
+    "name": "Notion",
+    "candidates": [
+      "notion",
+      "notion-notion"
+    ]
+  },
+  {
+    "id": "SlackTechnologies.Slack",
+    "name": "Slack",
+    "candidates": [
+      "slack",
+      "slacktechnologies-slack"
+    ]
+  },
+  {
+    "id": "Discord.Discord",
+    "name": "Discord",
+    "candidates": [
+      "discord",
+      "discord-discord"
+    ]
+  },
+  {
+    "id": "Zoom.Zoom",
+    "name": "Zoom",
+    "candidates": [
+      "zoom",
+      "zoom-zoom"
+    ]
+  },
+  {
+    "id": "Microsoft.Teams",
+    "name": "Microsoft Teams",
+    "candidates": [
+      "microsoft-teams",
+      "teams"
+    ]
+  },
+  {
+    "id": "Trello.Trello",
+    "name": "Trello",
+    "candidates": [
+      "trello",
+      "trello-trello",
+      "atlassian-trello"
+    ]
+  },
+  {
+    "id": "Doist.Todoist",
+    "name": "Todoist",
+    "candidates": [
+      "todoist",
+      "doist-todoist"
+    ]
+  },
+  {
+    "id": "Evernote.Evernote",
+    "name": "Evernote",
+    "candidates": [
+      "evernote",
+      "evernote-evernote"
+    ]
+  },
+  {
+    "id": "TheDocumentFoundation.LibreOffice",
+    "name": "LibreOffice",
+    "candidates": [
+      "libreoffice-fresh",
+      "libreoffice",
+      "thedocumentfoundation-libreoffice"
+    ]
+  },
+  {
+    "id": "Apache.OpenOffice",
+    "name": "Apache OpenOffice",
+    "candidates": [
+      "openoffice",
+      "apache-openoffice"
+    ]
+  },
+  {
+    "id": "RARLab.WinRAR",
+    "name": "WinRAR",
+    "candidates": [
+      "winrar",
+      "rarlab-winrar"
+    ]
+  },
+  {
+    "id": "7zip.7zip",
+    "name": "7-Zip",
+    "candidates": [
+      "7zip",
+      "p7zip",
+      "7-zip",
+      "7zip-7zip"
+    ]
+  },
+  {
+    "id": "WinSCP.WinSCP",
+    "name": "WinSCP",
+    "candidates": [
+      "winscp",
+      "winscp-winscp"
+    ]
+  },
+  {
+    "id": "voidtools.Everything",
+    "name": "Everything",
+    "candidates": [
+      "everything",
+      "voidtools-everything"
+    ]
+  },
+  {
+    "id": "Microsoft.PowerToys",
+    "name": "PowerToys",
+    "candidates": [
+      "powertoys",
+      "microsoft-powertoys"
+    ]
+  },
+  {
+    "id": "CrystalDewWorld.CrystalDiskInfo",
+    "name": "CrystalDiskInfo",
+    "candidates": [
+      "crystaldiskinfo",
+      "crystaldewworld-crystaldiskinfo"
+    ]
+  },
+  {
+    "id": "qBittorrent.qBittorrent",
+    "name": "qBittorrent",
+    "candidates": [
+      "qbittorrent",
+      "qbittorrent-qbittorrent"
+    ]
+  },
+  {
+    "id": "Balena.Etcher",
+    "name": "balenaEtcher",
+    "candidates": [
+      "etcher",
+      "balenaetcher",
+      "balena-etcher"
+    ]
+  },
+  {
+    "id": "Rufus.Rufus",
+    "name": "Rufus",
+    "candidates": [
+      "rufus",
+      "rufus-rufus"
+    ]
+  },
+  {
+    "id": "ShareX.ShareX",
+    "name": "ShareX",
+    "candidates": [
+      "sharex",
+      "sharex-sharex"
+    ]
+  },
+  {
+    "id": "Malwarebytes.Malwarebytes",
+    "name": "Malwarebytes",
+    "candidates": [
+      "malwarebytes",
+      "malwarebytes-malwarebytes"
+    ]
+  },
+  {
+    "id": "Bitwarden.Bitwarden",
+    "name": "Bitwarden",
+    "candidates": [
+      "bitwarden",
+      "bitwarden-bitwarden"
+    ]
+  },
+  {
+    "id": "AgileBits.1Password",
+    "name": "1Password",
+    "candidates": [
+      "1password",
+      "agilebits-1password"
+    ]
+  },
+  {
+    "id": "KeePassXCTeam.KeePassXC",
+    "name": "KeePassXC",
+    "candidates": [
+      "keepassxc",
+      "keepassxcteam-keepassxc"
+    ]
+  },
+  {
+    "id": "OpenVPNTechnologies.OpenVPNConnect",
+    "name": "OpenVPN Connect",
+    "candidates": [
+      "openvpn-connect",
+      "openvpntechnologies-openvpnconnect",
+      "openvpnconnect"
+    ]
+  },
+  {
+    "id": "Proton.ProtonVPN",
+    "name": "Proton VPN",
+    "candidates": [
+      "protonvpn",
+      "proton-vpn",
+      "proton-protonvpn"
+    ]
+  },
+  {
+    "id": "NordSecurity.NordVPN",
+    "name": "NordVPN",
+    "candidates": [
+      "nordvpn",
+      "nordsecurity-nordvpn"
+    ]
+  },
+  {
+    "id": "WiresharkFoundation.Wireshark",
+    "name": "Wireshark",
+    "candidates": [
+      "wireshark",
+      "wiresharkfoundation-wireshark"
+    ]
+  },
+  {
+    "id": "GnuPG.Gpg4win",
+    "name": "Gpg4win",
+    "candidates": [
+      "gpg4win",
+      "gnupg",
+      "gnupg-gpg4win"
+    ]
+  },
+  {
+    "id": "Cisco.AnyConnect",
+    "name": "Cisco AnyConnect",
+    "candidates": [
+      "cisco-anyconnect",
+      "anyconnect"
+    ]
+  },
+  {
+    "id": "Telegram.TelegramDesktop",
+    "name": "Telegram Desktop",
+    "candidates": [
+      "telegram",
+      "telegram-desktop",
+      "telegram-telegramdesktop",
+      "telegramdesktop"
+    ]
+  },
+  {
+    "id": "WhatsApp.WhatsApp",
+    "name": "WhatsApp",
+    "candidates": [
+      "whatsapp",
+      "whatsapp-whatsapp"
+    ]
+  },
+  {
+    "id": "Viber.Viber",
+    "name": "Viber",
+    "candidates": [
+      "viber",
+      "viber-viber"
+    ]
+  },
+  {
+    "id": "OpenWhisperSystems.Signal",
+    "name": "Signal",
+    "candidates": [
+      "signal",
+      "openwhispersystems-signal"
+    ]
+  },
+  {
+    "id": "Mozilla.Thunderbird",
+    "name": "Thunderbird",
+    "candidates": [
+      "thunderbird",
+      "mozilla-thunderbird"
+    ]
+  },
+  {
+    "id": "Microsoft.Skype",
+    "name": "Skype",
+    "candidates": [
+      "skype",
+      "microsoft-skype"
+    ]
+  },
+  {
+    "id": "Element.Element",
+    "name": "Element",
+    "candidates": [
+      "element-desktop",
+      "element",
+      "element-element"
+    ]
+  },
+  {
+    "id": "TeamSpeakSystems.TeamSpeakClient",
+    "name": "TeamSpeak",
+    "candidates": [
+      "teamspeak",
+      "teamspeak-client",
+      "teamspeaksystems-teamspeakclient",
+      "teamspeakclient"
+    ]
+  },
+  {
+    "id": "Tencent.WeChat",
+    "name": "WeChat",
+    "candidates": [
+      "wechat",
+      "tencent-wechat"
+    ]
+  },
+  {
+    "id": "Franz.Franz",
+    "name": "Franz",
+    "candidates": [
+      "franz",
+      "franz-franz"
+    ]
+  },
+  {
+    "id": "Figma.Figma",
+    "name": "Figma",
+    "candidates": [
+      "figma",
+      "figma-figma"
+    ]
+  },
+  {
+    "id": "Canva.Canva",
+    "name": "Canva",
+    "candidates": [
+      "canva",
+      "canva-canva"
+    ]
+  },
+  {
+    "id": "Adobe.Photoshop",
+    "name": "Adobe Photoshop",
+    "candidates": [
+      "adobe-photoshop",
+      "photoshop"
+    ]
+  },
+  {
+    "id": "Adobe.Illustrator",
+    "name": "Adobe Illustrator",
+    "candidates": [
+      "adobe-illustrator",
+      "illustrator"
+    ]
+  },
+  {
+    "id": "Inkscape.Inkscape",
+    "name": "Inkscape",
+    "candidates": [
+      "inkscape",
+      "inkscape-inkscape"
+    ]
+  },
+  {
+    "id": "KDE.Krita",
+    "name": "Krita",
+    "candidates": [
+      "krita",
+      "kde-krita"
+    ]
+  },
+  {
+    "id": "BlenderFoundation.Blender",
+    "name": "Blender",
+    "candidates": [
+      "blender",
+      "blenderfoundation-blender"
+    ]
+  },
+  {
+    "id": "Sketch.Sketch",
+    "name": "Sketch",
+    "candidates": [
+      "sketch",
+      "sketch-sketch"
+    ]
+  },
+  {
+    "id": "Serif.AffinityPhoto2",
+    "name": "Affinity Photo 2",
+    "candidates": [
+      "affinity-photo-2",
+      "serif-affinityphoto2",
+      "affinityphoto2"
+    ]
+  },
+  {
+    "id": "Corel.CorelDRAW.GraphicsSuite",
+    "name": "CorelDRAW Graphics Suite",
+    "candidates": [
+      "coreldraw-graphics-suite",
+      "corel-coreldraw-graphicssuite",
+      "graphicssuite",
+      "coreldraw-graphicssuite"
+    ]
+  },
+  {
+    "id": "Valve.Steam",
+    "name": "Steam",
+    "candidates": [
+      "steam",
+      "valve-steam"
+    ]
+  },
+  {
+    "id": "EpicGames.EpicGamesLauncher",
+    "name": "Epic Games Launcher",
+    "candidates": [
+      "epicgameslauncher",
+      "epic-games",
+      "epic-games-launcher",
+      "epicgames-epicgameslauncher"
+    ]
+  },
+  {
+    "id": "GOG.Galaxy",
+    "name": "GOG Galaxy",
+    "candidates": [
+      "goggalaxy",
+      "gog-galaxy",
+      "galaxy"
+    ]
+  },
+  {
+    "id": "Ubisoft.Connect",
+    "name": "Ubisoft Connect",
+    "candidates": [
+      "ubisoft-connect",
+      "connect"
+    ]
+  },
+  {
+    "id": "ElectronicArts.EADesktop",
+    "name": "EA App",
+    "candidates": [
+      "ea-app",
+      "electronicarts-eadesktop",
+      "eadesktop"
+    ]
+  },
+  {
+    "id": "Blizzard.BattleNet",
+    "name": "Battle.net",
+    "candidates": [
+      "battle.net",
+      "battle-net",
+      "blizzard-battlenet",
+      "battlenet"
+    ]
+  },
+  {
+    "id": "Mojang.MinecraftLauncher",
+    "name": "Minecraft Launcher",
+    "candidates": [
+      "minecraft-launcher",
+      "mojang-minecraftlauncher",
+      "minecraftlauncher"
+    ]
+  },
+  {
+    "id": "ItchIo.Itch",
+    "name": "itch.io",
+    "candidates": [
+      "itch",
+      "itch-io",
+      "itchio-itch"
+    ]
+  },
+  {
+    "id": "HeroicGamesLauncher.HeroicGamesLauncher",
+    "name": "Heroic Games Launcher",
+    "candidates": [
+      "heroic",
+      "heroic-games-launcher",
+      "heroicgameslauncher-heroicgameslauncher",
+      "heroicgameslauncher"
+    ]
+  },
+  {
+    "id": "RiotGames.LeagueOfLegends",
+    "name": "League of Legends",
+    "candidates": [
+      "league-of-legends",
+      "riotgames-leagueoflegends",
+      "leagueoflegends"
+    ]
+  },
+  {
+    "id": "Google.Drive",
+    "name": "Google Drive",
+    "candidates": [
+      "googledrive",
+      "google-drive",
+      "drive"
+    ]
+  },
+  {
+    "id": "Dropbox.Dropbox",
+    "name": "Dropbox",
+    "candidates": [
+      "dropbox",
+      "dropbox-dropbox"
+    ]
+  },
+  {
+    "id": "Microsoft.OneDrive",
+    "name": "OneDrive",
+    "candidates": [
+      "onedrive",
+      "microsoft-onedrive"
+    ]
+  },
+  {
+    "id": "Box.BoxDrive",
+    "name": "Box Drive",
+    "candidates": [
+      "box-drive",
+      "box-boxdrive",
+      "boxdrive"
+    ]
+  },
+  {
+    "id": "Mega.MEGASync",
+    "name": "MEGA Sync",
+    "candidates": [
+      "megasync",
+      "mega-sync",
+      "mega-megasync"
+    ]
+  },
+  {
+    "id": "pCloud.pCloudDrive",
+    "name": "pCloud Drive",
+    "candidates": [
+      "pcloud-drive",
+      "pcloud-pclouddrive",
+      "pclouddrive"
+    ]
+  },
+  {
+    "id": "Nextcloud.NextcloudDesktop",
+    "name": "Nextcloud Desktop",
+    "candidates": [
+      "nextcloud-client",
+      "nextcloud",
+      "nextcloud-desktop",
+      "nextcloud-nextclouddesktop",
+      "nextclouddesktop"
+    ]
+  },
+  {
+    "id": "Synology.DriveClient",
+    "name": "Synology Drive Client",
+    "candidates": [
+      "synology-drive-client",
+      "synology-driveclient",
+      "driveclient"
+    ]
+  },
+  {
+    "id": "OwnCloud.Desktop",
+    "name": "ownCloud Desktop",
+    "candidates": [
+      "owncloud-client",
+      "owncloud",
+      "owncloud-desktop",
+      "desktop"
+    ]
+  },
+  {
+    "id": "Resilio.ResilioSync",
+    "name": "Resilio Sync",
+    "candidates": [
+      "resilio-sync",
+      "resilio-resiliosync",
+      "resiliosync"
+    ]
+  },
+  {
+    "id": "Arc.Browser",
+    "name": "Arc Browser",
+    "candidates": [
+      "arc-browser",
+      "arc",
+      "thebrowsercompany-arc"
+    ]
+  },
+  {
+    "id": "ZenTeam.ZenBrowser",
+    "name": "Zen Browser",
+    "candidates": [
+      "zen-browser",
+      "zenteam-zenbrowser",
+      "zenbrowser"
+    ]
+  },
+  {
+    "id": "JetBrains.PyCharm.Community",
+    "name": "PyCharm Community",
+    "candidates": [
+      "pycharm-community",
+      "pycharm-ce",
+      "jetbrains-pycharm-community",
+      "community"
+    ]
+  },
+  {
+    "id": "JetBrains.WebStorm",
+    "name": "WebStorm",
+    "candidates": [
+      "webstorm",
+      "jetbrains-webstorm"
+    ]
+  },
+  {
+    "id": "JetBrains.CLion",
+    "name": "CLion",
+    "candidates": [
+      "clion-ide",
+      "clion",
+      "jetbrains-clion"
+    ]
+  },
+  {
+    "id": "JetBrains.Rider",
+    "name": "Rider",
+    "candidates": [
+      "jetbrains-rider",
+      "rider"
+    ]
+  },
+  {
+    "id": "Google.AndroidStudio",
+    "name": "Android Studio",
+    "candidates": [
+      "androidstudio",
+      "android-studio",
+      "google-androidstudio"
+    ]
+  },
+  {
+    "id": "Oracle.JDK.21",
+    "name": "Oracle JDK 21",
+    "candidates": [
+      "jdk21",
+      "openjdk@21",
+      "oracle-jdk-21",
+      "21",
+      "jdk-21"
+    ]
+  },
+  {
+    "id": "GoLang.Go",
+    "name": "Go",
+    "candidates": [
+      "golang",
+      "go",
+      "golang-go"
+    ]
+  },
+  {
+    "id": "Rustlang.Rustup",
+    "name": "Rust",
+    "candidates": [
+      "rustup.install",
+      "rustup",
+      "rust",
+      "rustlang-rustup"
+    ]
+  },
+  {
+    "id": "DBeaver.DBeaver",
+    "name": "DBeaver",
+    "candidates": [
+      "dbeaver",
+      "dbeaver-community",
+      "dbeaver-dbeaver"
+    ]
+  },
+  {
+    "id": "Insomnia.Insomnia",
+    "name": "Insomnia",
+    "candidates": [
+      "insomnia-rest-api-client",
+      "insomnia",
+      "insomnia-insomnia",
+      "kong-insomnia"
+    ]
+  },
+  {
+    "id": "Daum.PotPlayer",
+    "name": "PotPlayer",
+    "candidates": [
+      "potplayer",
+      "daum-potplayer"
+    ]
+  },
+  {
+    "id": "MusicBee.MusicBee",
+    "name": "MusicBee",
+    "candidates": [
+      "musicbee",
+      "musicbee-musicbee"
+    ]
+  },
+  {
+    "id": "Shotcut.Shotcut",
+    "name": "Shotcut",
+    "candidates": [
+      "shotcut",
+      "shotcut-shotcut",
+      "meltytech-shotcut"
+    ]
+  },
+  {
+    "id": "Kdenlive.Kdenlive",
+    "name": "Kdenlive",
+    "candidates": [
+      "kdenlive",
+      "kdenlive-kdenlive",
+      "kde-kdenlive"
+    ]
+  },
+  {
+    "id": "MediaArea.MediaInfo",
+    "name": "MediaInfo",
+    "candidates": [
+      "mediainfo-gui",
+      "mediainfo",
+      "mediaarea-mediainfo",
+      "mediaarea-mediainfo-gui",
+      "gui"
+    ]
+  },
+  {
+    "id": "Anchor.Anchor",
+    "name": "Anchor",
+    "candidates": [
+      "anchor",
+      "anchor-anchor",
+      "spotify-anchor"
+    ]
+  },
+  {
+    "id": "Asana.Asana",
+    "name": "Asana",
+    "candidates": [
+      "asana",
+      "asana-asana"
+    ]
+  },
+  {
+    "id": "ClickUp.ClickUp",
+    "name": "ClickUp",
+    "candidates": [
+      "clickup",
+      "clickup-clickup"
+    ]
+  },
+  {
+    "id": "Obsidian.Obsidian",
+    "name": "Obsidian",
+    "candidates": [
+      "obsidian",
+      "obsidian-obsidian"
+    ]
+  },
+  {
+    "id": "Joplin.Joplin",
+    "name": "Joplin",
+    "candidates": [
+      "joplin",
+      "joplin-joplin"
+    ]
+  },
+  {
+    "id": "KDiff3.KDiff3",
+    "name": "KDiff3",
+    "candidates": [
+      "kdiff3",
+      "kdiff3-kdiff3",
+      "kde-kdiff3"
+    ]
+  },
+  {
+    "id": "Notepad++.Notepad++",
+    "name": "Notepad++",
+    "candidates": [
+      "notepadplusplus",
+      "notepadplusplus-notepadplusplus"
+    ]
+  },
+  {
+    "id": "Greenshot.Greenshot",
+    "name": "Greenshot",
+    "candidates": [
+      "greenshot",
+      "greenshot-greenshot"
+    ]
+  },
+  {
+    "id": "Sysinternals.ProcessExplorer",
+    "name": "Process Explorer",
+    "candidates": [
+      "procexp",
+      "process-explorer",
+      "sysinternals-processexplorer",
+      "microsoft-sysinternals-processexplorer",
+      "processexplorer"
+    ]
+  },
+  {
+    "id": "CPUID.CPU-Z",
+    "name": "CPU-Z",
+    "candidates": [
+      "cpu-z",
+      "cpuid-cpu-z"
+    ]
+  },
+  {
+    "id": "ESET.NOD32",
+    "name": "ESET NOD32",
+    "candidates": [
+      "eset-nod32",
+      "nod32"
+    ]
+  },
+  {
+    "id": "Avast.AvastFreeAntivirus",
+    "name": "Avast Free Antivirus",
+    "candidates": [
+      "avastfreeantivirus",
+      "avast-free-antivirus",
+      "avast-avastfreeantivirus"
+    ]
+  },
+  {
+    "id": "AVG.AVGAntiVirusFree",
+    "name": "AVG AntiVirus Free",
+    "candidates": [
+      "avgantivirusfree",
+      "avg-antivirus-free",
+      "avg-avgantivirusfree"
+    ]
+  },
+  {
+    "id": "Kaspersky.Kaspersky",
+    "name": "Kaspersky",
+    "candidates": [
+      "kaspersky",
+      "kaspersky-kaspersky"
+    ]
+  },
+  {
+    "id": "Sophos.Home",
+    "name": "Sophos Home",
+    "candidates": [
+      "sophos-home",
+      "home"
+    ]
+  },
+  {
+    "id": "Pidgin.Pidgin",
+    "name": "Pidgin",
+    "candidates": [
+      "pidgin",
+      "pidgin-pidgin"
+    ]
+  },
+  {
+    "id": "Mattermost.Desktop",
+    "name": "Mattermost Desktop",
+    "candidates": [
+      "mattermost-desktop",
+      "mattermost",
+      "desktop"
+    ]
+  },
+  {
+    "id": "RocketChat.RocketChat",
+    "name": "Rocket.Chat",
+    "candidates": [
+      "rocketchat",
+      "rocket-chat",
+      "rocketchat-rocketchat"
+    ]
+  },
+  {
+    "id": "LINE.LINE",
+    "name": "LINE",
+    "candidates": [
+      "line",
+      "line-line"
+    ]
+  },
+  {
+    "id": "Mumble.Mumble",
+    "name": "Mumble",
+    "candidates": [
+      "mumble",
+      "mumble-mumble"
+    ]
+  },
+  {
+    "id": "Adobe.XD",
+    "name": "Adobe XD",
+    "candidates": [
+      "adobe-xd",
+      "xd"
+    ]
+  },
+  {
+    "id": "Adobe.InDesign",
+    "name": "Adobe InDesign",
+    "candidates": [
+      "adobe-indesign",
+      "indesign"
+    ]
+  },
+  {
+    "id": "Adobe.Lightroom",
+    "name": "Adobe Lightroom",
+    "candidates": [
+      "adobe-lightroom",
+      "lightroom"
+    ]
+  },
+  {
+    "id": "Photopea.Photopea",
+    "name": "Photopea Desktop",
+    "candidates": [
+      "photopea-desktop",
+      "photopea-photopea",
+      "photopea"
+    ]
+  },
+  {
+    "id": "Lunacy.Lunacy",
+    "name": "Lunacy",
+    "candidates": [
+      "lunacy",
+      "lunacy-lunacy",
+      "icons8-lunacy"
+    ]
+  },
+  {
+    "id": "RiotGames.Valorant",
+    "name": "VALORANT",
+    "candidates": [
+      "valorant",
+      "riotgames-valorant"
+    ]
+  },
+  {
+    "id": "RiotGames.LeagueClient",
+    "name": "League Client",
+    "candidates": [
+      "league-client",
+      "riotgames-leagueclient",
+      "leagueclient"
+    ]
+  },
+  {
+    "id": "ElectronicArts.Origin",
+    "name": "Origin",
+    "candidates": [
+      "origin",
+      "electronicarts-origin"
+    ]
+  },
+  {
+    "id": "NexusMods.Vortex",
+    "name": "Vortex Mod Manager",
+    "candidates": [
+      "vortex",
+      "vortex-mod-manager",
+      "nexusmods-vortex",
+      "blacktreegamingltd-vortex"
+    ]
+  },
+  {
+    "id": "Logitech.GHub",
+    "name": "Logitech G HUB",
+    "candidates": [
+      "logitech-ghub",
+      "logitech-g-hub",
+      "ghub"
+    ]
+  },
+  {
+    "id": "Google.BackupAndSync",
+    "name": "Google Backup and Sync",
+    "candidates": [
+      "google-backup-and-sync",
+      "google-backupandsync",
+      "backupandsync"
+    ]
+  },
+  {
+    "id": "Apple.iCloud",
+    "name": "iCloud",
+    "candidates": [
+      "icloud",
+      "apple-icloud"
+    ]
+  },
+  {
+    "id": "Seafile.SeafileClient",
+    "name": "Seafile Client",
+    "candidates": [
+      "seafile-client",
+      "seafile-seafileclient",
+      "seafile-seafile",
+      "seafile"
+    ]
+  },
+  {
+    "id": "Insync.Insync",
+    "name": "Insync",
+    "candidates": [
+      "insync",
+      "insync-insync"
+    ]
+  },
+  {
+    "id": "Koofr.Koofr",
+    "name": "Koofr",
+    "candidates": [
+      "koofr",
+      "koofr-koofr"
+    ]
+  }
+]

@@ -1,0 +1,961 @@
+[
+  {
+    "id": "Google.Chrome",
+    "name": "Google Chrome",
+    "oldPackage": null,
+    "newPackage": "googlechrome",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Microsoft.Edge",
+    "name": "Microsoft Edge",
+    "oldPackage": null,
+    "newPackage": "microsoft-edge",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Brave.Brave",
+    "name": "Brave",
+    "oldPackage": null,
+    "newPackage": "brave",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Mozilla.Firefox",
+    "name": "Mozilla Firefox",
+    "oldPackage": null,
+    "newPackage": "firefox",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Opera.Opera",
+    "name": "Opera",
+    "oldPackage": null,
+    "newPackage": "opera",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Vivaldi.Vivaldi",
+    "name": "Vivaldi",
+    "oldPackage": null,
+    "newPackage": "vivaldi",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "TorProject.TorBrowser",
+    "name": "Tor Browser",
+    "oldPackage": null,
+    "newPackage": "tor-browser",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Waterfox.Waterfox",
+    "name": "Waterfox",
+    "oldPackage": null,
+    "newPackage": "waterfox",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Maxthon.Maxthon",
+    "name": "Maxthon",
+    "oldPackage": null,
+    "newPackage": "maxthon",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Yandex.Browser",
+    "name": "Yandex Browser",
+    "oldPackage": null,
+    "newPackage": "yandex-browser",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Microsoft.VisualStudioCode",
+    "name": "Visual Studio Code",
+    "oldPackage": null,
+    "newPackage": "vscode",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "JetBrains.IntelliJIDEA.Community",
+    "name": "IntelliJ IDEA Community",
+    "oldPackage": null,
+    "newPackage": "intellijidea-community",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Git.Git",
+    "name": "Git",
+    "oldPackage": null,
+    "newPackage": "git",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "OpenJS.NodeJS",
+    "name": "Node.js",
+    "oldPackage": null,
+    "newPackage": "nodejs",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Python.Python.3.12",
+    "name": "Python",
+    "oldPackage": null,
+    "newPackage": "python",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Docker.DockerDesktop",
+    "name": "Docker Desktop",
+    "oldPackage": null,
+    "newPackage": "docker-desktop",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Postman.Postman",
+    "name": "Postman",
+    "oldPackage": null,
+    "newPackage": "postman",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "FileZilla.FileZilla",
+    "name": "FileZilla",
+    "oldPackage": null,
+    "newPackage": "filezilla",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "GitHub.GitHubDesktop",
+    "name": "GitHub Desktop",
+    "oldPackage": null,
+    "newPackage": "github-desktop",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "SublimeHQ.SublimeText.4",
+    "name": "Sublime Text",
+    "oldPackage": null,
+    "newPackage": "sublimetext4",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "VideoLAN.VLC",
+    "name": "VLC",
+    "oldPackage": null,
+    "newPackage": "vlc",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Spotify.Spotify",
+    "name": "Spotify",
+    "oldPackage": null,
+    "newPackage": "spotify",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "OBSProject.OBSStudio",
+    "name": "OBS Studio",
+    "oldPackage": null,
+    "newPackage": "obs-studio",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Audacity.Audacity",
+    "name": "Audacity",
+    "oldPackage": null,
+    "newPackage": "audacity",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "HandBrake.HandBrake",
+    "name": "HandBrake",
+    "oldPackage": null,
+    "newPackage": "handbrake",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Plex.Plex",
+    "name": "Plex",
+    "oldPackage": null,
+    "newPackage": "plex",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Kodi.Kodi",
+    "name": "Kodi",
+    "oldPackage": null,
+    "newPackage": "kodi",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "AIMP.AIMP",
+    "name": "AIMP",
+    "oldPackage": null,
+    "newPackage": "aimp",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "MPV.MPV",
+    "name": "mpv",
+    "oldPackage": null,
+    "newPackage": "mpv",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Foobar2000.Foobar2000",
+    "name": "foobar2000",
+    "oldPackage": null,
+    "newPackage": "foobar2000",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Notion.Notion",
+    "name": "Notion",
+    "oldPackage": null,
+    "newPackage": "notion",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "SlackTechnologies.Slack",
+    "name": "Slack",
+    "oldPackage": null,
+    "newPackage": "slack",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Discord.Discord",
+    "name": "Discord",
+    "oldPackage": null,
+    "newPackage": "discord",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Zoom.Zoom",
+    "name": "Zoom",
+    "oldPackage": null,
+    "newPackage": "zoom",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Microsoft.Teams",
+    "name": "Microsoft Teams",
+    "oldPackage": null,
+    "newPackage": "microsoft-teams",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Doist.Todoist",
+    "name": "Todoist",
+    "oldPackage": null,
+    "newPackage": "todoist",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Evernote.Evernote",
+    "name": "Evernote",
+    "oldPackage": null,
+    "newPackage": "evernote",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "TheDocumentFoundation.LibreOffice",
+    "name": "LibreOffice",
+    "oldPackage": null,
+    "newPackage": "libreoffice-fresh",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Apache.OpenOffice",
+    "name": "Apache OpenOffice",
+    "oldPackage": null,
+    "newPackage": "openoffice",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "RARLab.WinRAR",
+    "name": "WinRAR",
+    "oldPackage": null,
+    "newPackage": "winrar",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "7zip.7zip",
+    "name": "7-Zip",
+    "oldPackage": null,
+    "newPackage": "7zip",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "WinSCP.WinSCP",
+    "name": "WinSCP",
+    "oldPackage": null,
+    "newPackage": "winscp",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "voidtools.Everything",
+    "name": "Everything",
+    "oldPackage": null,
+    "newPackage": "everything",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Microsoft.PowerToys",
+    "name": "PowerToys",
+    "oldPackage": null,
+    "newPackage": "powertoys",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "CrystalDewWorld.CrystalDiskInfo",
+    "name": "CrystalDiskInfo",
+    "oldPackage": null,
+    "newPackage": "crystaldiskinfo",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "qBittorrent.qBittorrent",
+    "name": "qBittorrent",
+    "oldPackage": null,
+    "newPackage": "qbittorrent",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Balena.Etcher",
+    "name": "balenaEtcher",
+    "oldPackage": null,
+    "newPackage": "etcher",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Rufus.Rufus",
+    "name": "Rufus",
+    "oldPackage": null,
+    "newPackage": "rufus",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "ShareX.ShareX",
+    "name": "ShareX",
+    "oldPackage": null,
+    "newPackage": "sharex",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Malwarebytes.Malwarebytes",
+    "name": "Malwarebytes",
+    "oldPackage": null,
+    "newPackage": "malwarebytes",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Bitwarden.Bitwarden",
+    "name": "Bitwarden",
+    "oldPackage": null,
+    "newPackage": "bitwarden",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "AgileBits.1Password",
+    "name": "1Password",
+    "oldPackage": null,
+    "newPackage": "1password",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "KeePassXCTeam.KeePassXC",
+    "name": "KeePassXC",
+    "oldPackage": null,
+    "newPackage": "keepassxc",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "OpenVPNTechnologies.OpenVPNConnect",
+    "name": "OpenVPN Connect",
+    "oldPackage": null,
+    "newPackage": "openvpn-connect",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Proton.ProtonVPN",
+    "name": "Proton VPN",
+    "oldPackage": null,
+    "newPackage": "protonvpn",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "NordSecurity.NordVPN",
+    "name": "NordVPN",
+    "oldPackage": null,
+    "newPackage": "nordvpn",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "WiresharkFoundation.Wireshark",
+    "name": "Wireshark",
+    "oldPackage": null,
+    "newPackage": "wireshark",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "GnuPG.Gpg4win",
+    "name": "Gpg4win",
+    "oldPackage": null,
+    "newPackage": "gpg4win",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Cisco.AnyConnect",
+    "name": "Cisco AnyConnect",
+    "oldPackage": null,
+    "newPackage": "cisco-anyconnect",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Telegram.TelegramDesktop",
+    "name": "Telegram Desktop",
+    "oldPackage": null,
+    "newPackage": "telegram",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "WhatsApp.WhatsApp",
+    "name": "WhatsApp",
+    "oldPackage": null,
+    "newPackage": "whatsapp",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Viber.Viber",
+    "name": "Viber",
+    "oldPackage": null,
+    "newPackage": "viber",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "OpenWhisperSystems.Signal",
+    "name": "Signal",
+    "oldPackage": null,
+    "newPackage": "signal",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Mozilla.Thunderbird",
+    "name": "Thunderbird",
+    "oldPackage": null,
+    "newPackage": "thunderbird",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Microsoft.Skype",
+    "name": "Skype",
+    "oldPackage": null,
+    "newPackage": "skype",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Element.Element",
+    "name": "Element",
+    "oldPackage": null,
+    "newPackage": "element-desktop",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "TeamSpeakSystems.TeamSpeakClient",
+    "name": "TeamSpeak",
+    "oldPackage": null,
+    "newPackage": "teamspeak",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Tencent.WeChat",
+    "name": "WeChat",
+    "oldPackage": null,
+    "newPackage": "wechat",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Franz.Franz",
+    "name": "Franz",
+    "oldPackage": null,
+    "newPackage": "franz",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Figma.Figma",
+    "name": "Figma",
+    "oldPackage": null,
+    "newPackage": "figma",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Inkscape.Inkscape",
+    "name": "Inkscape",
+    "oldPackage": null,
+    "newPackage": "inkscape",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "KDE.Krita",
+    "name": "Krita",
+    "oldPackage": null,
+    "newPackage": "krita",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "BlenderFoundation.Blender",
+    "name": "Blender",
+    "oldPackage": null,
+    "newPackage": "blender",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Valve.Steam",
+    "name": "Steam",
+    "oldPackage": null,
+    "newPackage": "steam",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "EpicGames.EpicGamesLauncher",
+    "name": "Epic Games Launcher",
+    "oldPackage": null,
+    "newPackage": "epicgameslauncher",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "GOG.Galaxy",
+    "name": "GOG Galaxy",
+    "oldPackage": null,
+    "newPackage": "goggalaxy",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Ubisoft.Connect",
+    "name": "Ubisoft Connect",
+    "oldPackage": null,
+    "newPackage": "ubisoft-connect",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "ElectronicArts.EADesktop",
+    "name": "EA App",
+    "oldPackage": null,
+    "newPackage": "ea-app",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Blizzard.BattleNet",
+    "name": "Battle.net",
+    "oldPackage": null,
+    "newPackage": "battle.net",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Mojang.MinecraftLauncher",
+    "name": "Minecraft Launcher",
+    "oldPackage": null,
+    "newPackage": "minecraft-launcher",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "ItchIo.Itch",
+    "name": "itch.io",
+    "oldPackage": null,
+    "newPackage": "itch",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "HeroicGamesLauncher.HeroicGamesLauncher",
+    "name": "Heroic Games Launcher",
+    "oldPackage": null,
+    "newPackage": "heroic-games-launcher",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "RiotGames.LeagueOfLegends",
+    "name": "League of Legends",
+    "oldPackage": null,
+    "newPackage": "league-of-legends",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Google.Drive",
+    "name": "Google Drive",
+    "oldPackage": null,
+    "newPackage": "googledrive",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Dropbox.Dropbox",
+    "name": "Dropbox",
+    "oldPackage": null,
+    "newPackage": "dropbox",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Microsoft.OneDrive",
+    "name": "OneDrive",
+    "oldPackage": null,
+    "newPackage": "onedrive",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Box.BoxDrive",
+    "name": "Box Drive",
+    "oldPackage": null,
+    "newPackage": "box-drive",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Mega.MEGASync",
+    "name": "MEGA Sync",
+    "oldPackage": null,
+    "newPackage": "megasync",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "pCloud.pCloudDrive",
+    "name": "pCloud Drive",
+    "oldPackage": null,
+    "newPackage": "pcloud",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Nextcloud.NextcloudDesktop",
+    "name": "Nextcloud Desktop",
+    "oldPackage": null,
+    "newPackage": "nextcloud-client",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Synology.DriveClient",
+    "name": "Synology Drive Client",
+    "oldPackage": null,
+    "newPackage": "synologydrive",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "OwnCloud.Desktop",
+    "name": "ownCloud Desktop",
+    "oldPackage": null,
+    "newPackage": "owncloud-client",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Resilio.ResilioSync",
+    "name": "Resilio Sync",
+    "oldPackage": null,
+    "newPackage": "resilio-sync",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "ZenTeam.ZenBrowser",
+    "name": "Zen Browser",
+    "oldPackage": null,
+    "newPackage": "zen-browser",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "JetBrains.PyCharm.Community",
+    "name": "PyCharm Community",
+    "oldPackage": null,
+    "newPackage": "pycharm-community",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "JetBrains.WebStorm",
+    "name": "WebStorm",
+    "oldPackage": null,
+    "newPackage": "webstorm",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "JetBrains.CLion",
+    "name": "CLion",
+    "oldPackage": null,
+    "newPackage": "clion-ide",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "JetBrains.Rider",
+    "name": "Rider",
+    "oldPackage": null,
+    "newPackage": "jetbrains-rider",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Google.AndroidStudio",
+    "name": "Android Studio",
+    "oldPackage": null,
+    "newPackage": "androidstudio",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Oracle.JDK.21",
+    "name": "Oracle JDK 21",
+    "oldPackage": null,
+    "newPackage": "microsoft-openjdk-21",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "GoLang.Go",
+    "name": "Go",
+    "oldPackage": null,
+    "newPackage": "golang",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Rustlang.Rustup",
+    "name": "Rust",
+    "oldPackage": null,
+    "newPackage": "rustup.install",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "DBeaver.DBeaver",
+    "name": "DBeaver",
+    "oldPackage": null,
+    "newPackage": "dbeaver",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Insomnia.Insomnia",
+    "name": "Insomnia",
+    "oldPackage": null,
+    "newPackage": "insomnia-rest-api-client",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Daum.PotPlayer",
+    "name": "PotPlayer",
+    "oldPackage": null,
+    "newPackage": "potplayer",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "MusicBee.MusicBee",
+    "name": "MusicBee",
+    "oldPackage": null,
+    "newPackage": "musicbee",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Shotcut.Shotcut",
+    "name": "Shotcut",
+    "oldPackage": null,
+    "newPackage": "shotcut",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Kdenlive.Kdenlive",
+    "name": "Kdenlive",
+    "oldPackage": null,
+    "newPackage": "kdenlive",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "MediaArea.MediaInfo",
+    "name": "MediaInfo",
+    "oldPackage": null,
+    "newPackage": "mediainfo",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Anchor.Anchor",
+    "name": "Anchor",
+    "oldPackage": null,
+    "newPackage": "anchor",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Asana.Asana",
+    "name": "Asana",
+    "oldPackage": null,
+    "newPackage": "asana",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "ClickUp.ClickUp",
+    "name": "ClickUp",
+    "oldPackage": null,
+    "newPackage": "clickup",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Obsidian.Obsidian",
+    "name": "Obsidian",
+    "oldPackage": null,
+    "newPackage": "obsidian",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Joplin.Joplin",
+    "name": "Joplin",
+    "oldPackage": null,
+    "newPackage": "joplin",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "KDiff3.KDiff3",
+    "name": "KDiff3",
+    "oldPackage": null,
+    "newPackage": "kdiff3",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Notepad++.Notepad++",
+    "name": "Notepad++",
+    "oldPackage": null,
+    "newPackage": "notepadplusplus",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Greenshot.Greenshot",
+    "name": "Greenshot",
+    "oldPackage": null,
+    "newPackage": "greenshot",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Sysinternals.ProcessExplorer",
+    "name": "Process Explorer",
+    "oldPackage": null,
+    "newPackage": "procexp",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "CPUID.CPU-Z",
+    "name": "CPU-Z",
+    "oldPackage": null,
+    "newPackage": "cpu-z",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "ESET.NOD32",
+    "name": "ESET NOD32",
+    "oldPackage": null,
+    "newPackage": "eset-nod32",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Avast.AvastFreeAntivirus",
+    "name": "Avast Free Antivirus",
+    "oldPackage": null,
+    "newPackage": "avastfreeantivirus",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "AVG.AVGAntiVirusFree",
+    "name": "AVG AntiVirus Free",
+    "oldPackage": null,
+    "newPackage": "avgantivirusfree",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Kaspersky.Kaspersky",
+    "name": "Kaspersky",
+    "oldPackage": null,
+    "newPackage": "kaspersky",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Pidgin.Pidgin",
+    "name": "Pidgin",
+    "oldPackage": null,
+    "newPackage": "pidgin",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Mattermost.Desktop",
+    "name": "Mattermost Desktop",
+    "oldPackage": null,
+    "newPackage": "mattermost-desktop",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "RocketChat.RocketChat",
+    "name": "Rocket.Chat",
+    "oldPackage": null,
+    "newPackage": "rocketchat",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "LINE.LINE",
+    "name": "LINE",
+    "oldPackage": null,
+    "newPackage": "line",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Mumble.Mumble",
+    "name": "Mumble",
+    "oldPackage": null,
+    "newPackage": "mumble",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Lunacy.Lunacy",
+    "name": "Lunacy",
+    "oldPackage": null,
+    "newPackage": "lunacy",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "RiotGames.Valorant",
+    "name": "VALORANT",
+    "oldPackage": null,
+    "newPackage": "valorant",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "ElectronicArts.Origin",
+    "name": "Origin",
+    "oldPackage": null,
+    "newPackage": "origin",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "NexusMods.Vortex",
+    "name": "Vortex Mod Manager",
+    "oldPackage": null,
+    "newPackage": "vortex",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Logitech.GHub",
+    "name": "Logitech G HUB",
+    "oldPackage": null,
+    "newPackage": "logitech-g-hub",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Google.BackupAndSync",
+    "name": "Google Backup and Sync",
+    "oldPackage": null,
+    "newPackage": "google-backup-and-sync",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Apple.iCloud",
+    "name": "iCloud",
+    "oldPackage": null,
+    "newPackage": "icloud",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Seafile.SeafileClient",
+    "name": "Seafile Client",
+    "oldPackage": null,
+    "newPackage": "seafile-client",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  },
+  {
+    "id": "Insync.Insync",
+    "name": "Insync",
+    "oldPackage": null,
+    "newPackage": "insync",
+    "reason": "Verified exact package page on community.chocolatey.org; plain package name only."
+  }
+]

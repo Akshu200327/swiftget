@@ -8,7 +8,8 @@
     "brewId": "google-chrome",
     "aptId": "google-chrome-stable",
     "icon": "https://img.icons8.com/color/96/chrome.png",
-    "color": "#4285F4"
+    "color": "#4285F4",
+    "chocoId": "googlechrome"
   },
   {
     "id": "Microsoft.Edge",
@@ -19,7 +20,8 @@
     "brewId": "microsoft-edge",
     "aptId": "microsoft-edge-stable",
     "icon": "https://img.icons8.com/color/96/ms-edge-new.png",
-    "color": "#0078D7"
+    "color": "#0078D7",
+    "chocoId": "microsoft-edge"
   },
   {
     "id": "Brave.Brave",
@@ -30,7 +32,8 @@
     "brewId": "brave-browser",
     "aptId": "brave-browser",
     "icon": "https://img.icons8.com/color/96/brave-web-browser.png",
-    "color": "#FB542B"
+    "color": "#FB542B",
+    "chocoId": "brave"
   },
   {
     "id": "Mozilla.Firefox",
@@ -41,7 +44,8 @@
     "brewId": "firefox",
     "aptId": "firefox",
     "icon": "https://img.icons8.com/color/96/firefox.png",
-    "color": "#FF7139"
+    "color": "#FF7139",
+    "chocoId": "firefox"
   },
   {
     "id": "Opera.Opera",
@@ -52,7 +56,8 @@
     "brewId": "opera",
     "aptId": "opera-stable",
     "icon": "https://img.icons8.com/color/96/opera--v2.png",
-    "color": "#FF1B2D"
+    "color": "#FF1B2D",
+    "chocoId": "opera"
   },
   {
     "id": "Vivaldi.Vivaldi",
@@ -63,7 +68,8 @@
     "brewId": "vivaldi",
     "aptId": "vivaldi-stable",
     "icon": "https://img.icons8.com/color/96/vivaldi.png",
-    "color": "#EF3939"
+    "color": "#EF3939",
+    "chocoId": "vivaldi"
   },
   {
     "id": "TorProject.TorBrowser",
@@ -74,7 +80,8 @@
     "brewId": "tor-browser",
     "aptId": "torbrowser-launcher",
     "icon": "https://img.icons8.com/color/96/tor-browser.png",
-    "color": "#7D4698"
+    "color": "#7D4698",
+    "chocoId": "tor-browser"
   },
   {
     "id": "Waterfox.Waterfox",
@@ -85,7 +92,8 @@
     "brewId": "waterfox",
     "aptId": "waterfox",
     "icon": "https://img.icons8.com/color/96/waterfox.png",
-    "color": "#1A89C8"
+    "color": "#1A89C8",
+    "chocoId": "waterfox"
   },
   {
     "id": "Maxthon.Maxthon",
@@ -96,7 +104,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/internet.png",
-    "color": "#2A7FFF"
+    "color": "#2A7FFF",
+    "chocoId": "maxthon"
   },
   {
     "id": "Yandex.Browser",
@@ -107,7 +116,8 @@
     "brewId": "yandex",
     "aptId": "yandex-browser-beta",
     "icon": "https://img.icons8.com/color/96/yandex.png",
-    "color": "#FF0000"
+    "color": "#FF0000",
+    "chocoId": "yandex-browser"
   },
   {
     "id": "Microsoft.VisualStudioCode",
@@ -118,7 +128,8 @@
     "brewId": "visual-studio-code",
     "aptId": "code",
     "icon": "https://img.icons8.com/color/96/visual-studio-code-2019.png",
-    "color": "#007ACC"
+    "color": "#007ACC",
+    "chocoId": "vscode"
   },
   {
     "id": "JetBrains.IntelliJIDEA.Community",
@@ -129,7 +140,8 @@
     "brewId": "intellij-idea-ce",
     "aptId": "intellij-idea-community",
     "icon": "https://img.icons8.com/color/96/intellij-idea.png",
-    "color": "#000000"
+    "color": "#000000",
+    "chocoId": "intellijidea-community"
   },
   {
     "id": "Git.Git",
@@ -140,7 +152,8 @@
     "brewId": "git",
     "aptId": "git",
     "icon": "https://img.icons8.com/color/96/git.png",
-    "color": "#F05032"
+    "color": "#F05032",
+    "chocoId": "git"
   },
   {
     "id": "OpenJS.NodeJS",
@@ -151,7 +164,8 @@
     "brewId": "node",
     "aptId": "nodejs",
     "icon": "https://img.icons8.com/color/96/nodejs.png",
-    "color": "#339933"
+    "color": "#339933",
+    "chocoId": "nodejs"
   },
   {
     "id": "Python.Python.3.12",
@@ -162,7 +176,8 @@
     "brewId": "python",
     "aptId": "python3",
     "icon": "https://img.icons8.com/color/96/python.png",
-    "color": "#3776AB"
+    "color": "#3776AB",
+    "chocoId": "python"
   },
   {
     "id": "Docker.DockerDesktop",
@@ -173,7 +188,8 @@
     "brewId": "docker",
     "aptId": "docker.io",
     "icon": "https://img.icons8.com/color/96/docker.png",
-    "color": "#2496ED"
+    "color": "#2496ED",
+    "chocoId": "docker-desktop"
   },
   {
     "id": "Postman.Postman",
@@ -184,7 +200,8 @@
     "brewId": "postman",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/postman-api.png",
-    "color": "#FF6C37"
+    "color": "#FF6C37",
+    "chocoId": "postman"
   },
   {
     "id": "FileZilla.FileZilla",
@@ -195,7 +212,8 @@
     "brewId": "filezilla",
     "aptId": "filezilla",
     "icon": "https://img.icons8.com/color/96/filezilla.png",
-    "color": "#BF0000"
+    "color": "#BF0000",
+    "chocoId": "filezilla"
   },
   {
     "id": "GitHub.GitHubDesktop",
@@ -206,7 +224,8 @@
     "brewId": "github",
     "aptId": null,
     "icon": "https://img.icons8.com/fluency/96/github.png",
-    "color": "#24292F"
+    "color": "#24292F",
+    "chocoId": "github-desktop"
   },
   {
     "id": "SublimeHQ.SublimeText.4",
@@ -217,7 +236,8 @@
     "brewId": "sublime-text",
     "aptId": "sublime-text",
     "icon": "https://img.icons8.com/color/96/sublime-text.png",
-    "color": "#FF9800"
+    "color": "#FF9800",
+    "chocoId": "sublimetext4"
   },
   {
     "id": "VideoLAN.VLC",
@@ -228,7 +248,8 @@
     "brewId": "vlc",
     "aptId": "vlc",
     "icon": "https://img.icons8.com/color/96/vlc.png",
-    "color": "#FF8800"
+    "color": "#FF8800",
+    "chocoId": "vlc"
   },
   {
     "id": "Spotify.Spotify",
@@ -239,7 +260,8 @@
     "brewId": "spotify",
     "aptId": "spotify-client",
     "icon": "https://img.icons8.com/color/96/spotify.png",
-    "color": "#1DB954"
+    "color": "#1DB954",
+    "chocoId": "spotify"
   },
   {
     "id": "OBSProject.OBSStudio",
@@ -250,7 +272,8 @@
     "brewId": "obs",
     "aptId": "obs-studio",
     "icon": "https://img.icons8.com/color/96/obs-studio.png",
-    "color": "#302E31"
+    "color": "#302E31",
+    "chocoId": "obs-studio"
   },
   {
     "id": "Audacity.Audacity",
@@ -261,7 +284,8 @@
     "brewId": "audacity",
     "aptId": "audacity",
     "icon": "https://img.icons8.com/color/96/audacity.png",
-    "color": "#2E8B57"
+    "color": "#2E8B57",
+    "chocoId": "audacity"
   },
   {
     "id": "HandBrake.HandBrake",
@@ -272,7 +296,8 @@
     "brewId": "handbrake",
     "aptId": "handbrake",
     "icon": "https://img.icons8.com/color/96/handbrake.png",
-    "color": "#434343"
+    "color": "#434343",
+    "chocoId": "handbrake"
   },
   {
     "id": "Plex.Plex",
@@ -283,7 +308,8 @@
     "brewId": "plex",
     "aptId": "plexmediaserver",
     "icon": "https://img.icons8.com/color/96/plex.png",
-    "color": "#E5A00D"
+    "color": "#E5A00D",
+    "chocoId": "plex"
   },
   {
     "id": "Kodi.Kodi",
@@ -294,7 +320,8 @@
     "brewId": "kodi",
     "aptId": "kodi",
     "icon": "https://img.icons8.com/color/96/kodi.png",
-    "color": "#1F9CF0"
+    "color": "#1F9CF0",
+    "chocoId": "kodi"
   },
   {
     "id": "AIMP.AIMP",
@@ -305,7 +332,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/music.png",
-    "color": "#F57C00"
+    "color": "#F57C00",
+    "chocoId": "aimp"
   },
   {
     "id": "MPV.MPV",
@@ -316,7 +344,8 @@
     "brewId": "mpv",
     "aptId": "mpv",
     "icon": "https://img.icons8.com/color/96/video.png",
-    "color": "#607D8B"
+    "color": "#607D8B",
+    "chocoId": "mpv"
   },
   {
     "id": "Foobar2000.Foobar2000",
@@ -327,7 +356,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/audio-wave.png",
-    "color": "#3A6EA5"
+    "color": "#3A6EA5",
+    "chocoId": "foobar2000"
   },
   {
     "id": "Notion.Notion",
@@ -338,7 +368,8 @@
     "brewId": "notion",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/notion.png",
-    "color": "#111111"
+    "color": "#111111",
+    "chocoId": "notion"
   },
   {
     "id": "SlackTechnologies.Slack",
@@ -349,7 +380,8 @@
     "brewId": "slack",
     "aptId": "slack-desktop",
     "icon": "https://img.icons8.com/color/96/slack-new.png",
-    "color": "#4A154B"
+    "color": "#4A154B",
+    "chocoId": "slack"
   },
   {
     "id": "Discord.Discord",
@@ -360,7 +392,8 @@
     "brewId": "discord",
     "aptId": "discord",
     "icon": "https://img.icons8.com/color/96/discord.png",
-    "color": "#5865F2"
+    "color": "#5865F2",
+    "chocoId": "discord"
   },
   {
     "id": "Zoom.Zoom",
@@ -371,7 +404,8 @@
     "brewId": "zoom",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/zoom.png",
-    "color": "#2D8CFF"
+    "color": "#2D8CFF",
+    "chocoId": "zoom"
   },
   {
     "id": "Microsoft.Teams",
@@ -382,7 +416,8 @@
     "brewId": "microsoft-teams",
     "aptId": "teams",
     "icon": "https://img.icons8.com/fluency/96/microsoft-teams.png",
-    "color": "#6264A7"
+    "color": "#6264A7",
+    "chocoId": "microsoft-teams"
   },
   {
     "id": "Trello.Trello",
@@ -404,7 +439,8 @@
     "brewId": "todoist",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/todo-list.png",
-    "color": "#E44332"
+    "color": "#E44332",
+    "chocoId": "todoist"
   },
   {
     "id": "Evernote.Evernote",
@@ -415,7 +451,8 @@
     "brewId": "evernote",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/evernote.png",
-    "color": "#2DBE60"
+    "color": "#2DBE60",
+    "chocoId": "evernote"
   },
   {
     "id": "TheDocumentFoundation.LibreOffice",
@@ -426,7 +463,8 @@
     "brewId": "libreoffice",
     "aptId": "libreoffice",
     "icon": "https://img.icons8.com/color/96/libre-office.png",
-    "color": "#18A303"
+    "color": "#18A303",
+    "chocoId": "libreoffice-fresh"
   },
   {
     "id": "Apache.OpenOffice",
@@ -437,7 +475,8 @@
     "brewId": "openoffice",
     "aptId": "openoffice",
     "icon": "https://img.icons8.com/color/96/openoffice.png",
-    "color": "#0A5EA8"
+    "color": "#0A5EA8",
+    "chocoId": "openoffice"
   },
   {
     "id": "RARLab.WinRAR",
@@ -448,7 +487,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/winrar.png",
-    "color": "#8B008B"
+    "color": "#8B008B",
+    "chocoId": "winrar"
   },
   {
     "id": "7zip.7zip",
@@ -459,7 +499,8 @@
     "brewId": "p7zip",
     "aptId": "p7zip-full",
     "icon": "https://img.icons8.com/color/96/7zip.png",
-    "color": "#2E7D32"
+    "color": "#2E7D32",
+    "chocoId": "7zip"
   },
   {
     "id": "WinSCP.WinSCP",
@@ -470,7 +511,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/ftp.png",
-    "color": "#2E8B57"
+    "color": "#2E8B57",
+    "chocoId": "winscp"
   },
   {
     "id": "voidtools.Everything",
@@ -481,7 +523,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/fluency/96/search.png",
-    "color": "#0078D7"
+    "color": "#0078D7",
+    "chocoId": "everything"
   },
   {
     "id": "Microsoft.PowerToys",
@@ -492,7 +535,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/toolbox.png",
-    "color": "#5E5E5E"
+    "color": "#5E5E5E",
+    "chocoId": "powertoys"
   },
   {
     "id": "CrystalDewWorld.CrystalDiskInfo",
@@ -503,7 +547,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/hdd.png",
-    "color": "#00ACC1"
+    "color": "#00ACC1",
+    "chocoId": "crystaldiskinfo"
   },
   {
     "id": "qBittorrent.qBittorrent",
@@ -514,7 +559,8 @@
     "brewId": "qbittorrent",
     "aptId": "qbittorrent",
     "icon": "https://img.icons8.com/color/96/downloads-folder.png",
-    "color": "#3B82F6"
+    "color": "#3B82F6",
+    "chocoId": "qbittorrent"
   },
   {
     "id": "Balena.Etcher",
@@ -525,7 +571,8 @@
     "brewId": "balenaetcher",
     "aptId": "balena-etcher-electron",
     "icon": "https://img.icons8.com/color/96/usb.png",
-    "color": "#36495D"
+    "color": "#36495D",
+    "chocoId": "etcher"
   },
   {
     "id": "Rufus.Rufus",
@@ -536,7 +583,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/flash-drive.png",
-    "color": "#D32F2F"
+    "color": "#D32F2F",
+    "chocoId": "rufus"
   },
   {
     "id": "ShareX.ShareX",
@@ -547,7 +595,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/screenshot.png",
-    "color": "#1976D2"
+    "color": "#1976D2",
+    "chocoId": "sharex"
   },
   {
     "id": "Malwarebytes.Malwarebytes",
@@ -558,7 +607,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/shield.png",
-    "color": "#0078F0"
+    "color": "#0078F0",
+    "chocoId": "malwarebytes"
   },
   {
     "id": "Bitwarden.Bitwarden",
@@ -569,7 +619,8 @@
     "brewId": "bitwarden",
     "aptId": "bitwarden",
     "icon": "https://img.icons8.com/color/96/password.png",
-    "color": "#175DDC"
+    "color": "#175DDC",
+    "chocoId": "bitwarden"
   },
   {
     "id": "AgileBits.1Password",
@@ -580,7 +631,8 @@
     "brewId": "1password",
     "aptId": "1password",
     "icon": "https://img.icons8.com/color/96/password-manager.png",
-    "color": "#1A4BFF"
+    "color": "#1A4BFF",
+    "chocoId": "1password"
   },
   {
     "id": "KeePassXCTeam.KeePassXC",
@@ -591,7 +643,8 @@
     "brewId": "keepassxc",
     "aptId": "keepassxc",
     "icon": "https://img.icons8.com/color/96/key-security.png",
-    "color": "#4CAF50"
+    "color": "#4CAF50",
+    "chocoId": "keepassxc"
   },
   {
     "id": "OpenVPNTechnologies.OpenVPNConnect",
@@ -602,7 +655,8 @@
     "brewId": "openvpn-connect",
     "aptId": "openvpn",
     "icon": "https://img.icons8.com/color/96/vpn.png",
-    "color": "#FF6F00"
+    "color": "#FF6F00",
+    "chocoId": "openvpn-connect"
   },
   {
     "id": "Proton.ProtonVPN",
@@ -613,7 +667,8 @@
     "brewId": "protonvpn",
     "aptId": "protonvpn",
     "icon": "https://img.icons8.com/color/96/privacy.png",
-    "color": "#6D4AFF"
+    "color": "#6D4AFF",
+    "chocoId": "protonvpn"
   },
   {
     "id": "NordSecurity.NordVPN",
@@ -624,7 +679,8 @@
     "brewId": "nordvpn",
     "aptId": "nordvpn",
     "icon": "https://img.icons8.com/color/96/globe-shield.png",
-    "color": "#3B82F6"
+    "color": "#3B82F6",
+    "chocoId": "nordvpn"
   },
   {
     "id": "WiresharkFoundation.Wireshark",
@@ -635,7 +691,8 @@
     "brewId": "wireshark",
     "aptId": "wireshark",
     "icon": "https://img.icons8.com/color/96/wireshark.png",
-    "color": "#1679C4"
+    "color": "#1679C4",
+    "chocoId": "wireshark"
   },
   {
     "id": "GnuPG.Gpg4win",
@@ -646,7 +703,8 @@
     "brewId": "gnupg",
     "aptId": "gnupg",
     "icon": "https://img.icons8.com/color/96/lock.png",
-    "color": "#607D8B"
+    "color": "#607D8B",
+    "chocoId": "gpg4win"
   },
   {
     "id": "Cisco.AnyConnect",
@@ -657,7 +715,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/networking-manager.png",
-    "color": "#1D4E89"
+    "color": "#1D4E89",
+    "chocoId": "cisco-anyconnect"
   },
   {
     "id": "Telegram.TelegramDesktop",
@@ -668,7 +727,8 @@
     "brewId": "telegram",
     "aptId": "telegram-desktop",
     "icon": "https://img.icons8.com/color/96/telegram-app.png",
-    "color": "#26A5E4"
+    "color": "#26A5E4",
+    "chocoId": "telegram"
   },
   {
     "id": "WhatsApp.WhatsApp",
@@ -679,7 +739,8 @@
     "brewId": "whatsapp",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/whatsapp--v1.png",
-    "color": "#25D366"
+    "color": "#25D366",
+    "chocoId": "whatsapp"
   },
   {
     "id": "Viber.Viber",
@@ -690,7 +751,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/viber.png",
-    "color": "#7360F2"
+    "color": "#7360F2",
+    "chocoId": "viber"
   },
   {
     "id": "OpenWhisperSystems.Signal",
@@ -701,7 +763,8 @@
     "brewId": "signal",
     "aptId": "signal-desktop",
     "icon": "https://img.icons8.com/color/96/signal-app.png",
-    "color": "#3A76F0"
+    "color": "#3A76F0",
+    "chocoId": "signal"
   },
   {
     "id": "Mozilla.Thunderbird",
@@ -712,7 +775,8 @@
     "brewId": "thunderbird",
     "aptId": "thunderbird",
     "icon": "https://img.icons8.com/color/96/mozilla-thunderbird.png",
-    "color": "#0A84FF"
+    "color": "#0A84FF",
+    "chocoId": "thunderbird"
   },
   {
     "id": "Microsoft.Skype",
@@ -723,7 +787,8 @@
     "brewId": "skype",
     "aptId": "skypeforlinux",
     "icon": "https://img.icons8.com/color/96/skype.png",
-    "color": "#00AFF0"
+    "color": "#00AFF0",
+    "chocoId": "skype"
   },
   {
     "id": "Element.Element",
@@ -734,7 +799,8 @@
     "brewId": "element",
     "aptId": "element-desktop",
     "icon": "https://img.icons8.com/color/96/matrix.png",
-    "color": "#0DBD8B"
+    "color": "#0DBD8B",
+    "chocoId": "element-desktop"
   },
   {
     "id": "TeamSpeakSystems.TeamSpeakClient",
@@ -745,7 +811,8 @@
     "brewId": "teamspeak-client",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/communication.png",
-    "color": "#2580C3"
+    "color": "#2580C3",
+    "chocoId": "teamspeak"
   },
   {
     "id": "Tencent.WeChat",
@@ -756,7 +823,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/weixing.png",
-    "color": "#7BB32E"
+    "color": "#7BB32E",
+    "chocoId": "wechat"
   },
   {
     "id": "Franz.Franz",
@@ -767,7 +835,8 @@
     "brewId": "franz",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/chat.png",
-    "color": "#5C6BC0"
+    "color": "#5C6BC0",
+    "chocoId": "franz"
   },
   {
     "id": "Figma.Figma",
@@ -778,7 +847,8 @@
     "brewId": "figma",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/figma--v1.png",
-    "color": "#A259FF"
+    "color": "#A259FF",
+    "chocoId": "figma"
   },
   {
     "id": "Canva.Canva",
@@ -822,7 +892,8 @@
     "brewId": "inkscape",
     "aptId": "inkscape",
     "icon": "https://img.icons8.com/color/96/inkscape.png",
-    "color": "#000000"
+    "color": "#000000",
+    "chocoId": "inkscape"
   },
   {
     "id": "KDE.Krita",
@@ -833,7 +904,8 @@
     "brewId": "krita",
     "aptId": "krita",
     "icon": "https://img.icons8.com/color/96/krita.png",
-    "color": "#3BABFF"
+    "color": "#3BABFF",
+    "chocoId": "krita"
   },
   {
     "id": "BlenderFoundation.Blender",
@@ -844,7 +916,8 @@
     "brewId": "blender",
     "aptId": "blender",
     "icon": "https://img.icons8.com/color/96/blender-3d.png",
-    "color": "#F5792A"
+    "color": "#F5792A",
+    "chocoId": "blender"
   },
   {
     "id": "Sketch.Sketch",
@@ -888,7 +961,8 @@
     "brewId": "steam",
     "aptId": "steam-installer",
     "icon": "https://img.icons8.com/color/96/steam-circled.png",
-    "color": "#1B2838"
+    "color": "#1B2838",
+    "chocoId": "steam"
   },
   {
     "id": "EpicGames.EpicGamesLauncher",
@@ -899,7 +973,8 @@
     "brewId": "epic-games",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/epic-games.png",
-    "color": "#1A1A1A"
+    "color": "#1A1A1A",
+    "chocoId": "epicgameslauncher"
   },
   {
     "id": "GOG.Galaxy",
@@ -910,7 +985,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/controller.png",
-    "color": "#5A2CA0"
+    "color": "#5A2CA0",
+    "chocoId": "goggalaxy"
   },
   {
     "id": "Ubisoft.Connect",
@@ -921,7 +997,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/ubisoft.png",
-    "color": "#0057B8"
+    "color": "#0057B8",
+    "chocoId": "ubisoft-connect"
   },
   {
     "id": "ElectronicArts.EADesktop",
@@ -932,7 +1009,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/ea.png",
-    "color": "#FF1744"
+    "color": "#FF1744",
+    "chocoId": "ea-app"
   },
   {
     "id": "Blizzard.BattleNet",
@@ -943,7 +1021,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/battle-net.png",
-    "color": "#00AEEF"
+    "color": "#00AEEF",
+    "chocoId": "battle.net"
   },
   {
     "id": "Mojang.MinecraftLauncher",
@@ -954,7 +1033,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/minecraft-logo.png",
-    "color": "#43A047"
+    "color": "#43A047",
+    "chocoId": "minecraft-launcher"
   },
   {
     "id": "ItchIo.Itch",
@@ -965,7 +1045,8 @@
     "brewId": "itch",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/itch-io.png",
-    "color": "#FA5C5C"
+    "color": "#FA5C5C",
+    "chocoId": "itch"
   },
   {
     "id": "HeroicGamesLauncher.HeroicGamesLauncher",
@@ -976,7 +1057,8 @@
     "brewId": "heroic",
     "aptId": "heroic",
     "icon": "https://img.icons8.com/color/96/joystick.png",
-    "color": "#2F80ED"
+    "color": "#2F80ED",
+    "chocoId": "heroic-games-launcher"
   },
   {
     "id": "RiotGames.LeagueOfLegends",
@@ -987,7 +1069,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/league-of-legends.png",
-    "color": "#C89B3C"
+    "color": "#C89B3C",
+    "chocoId": "league-of-legends"
   },
   {
     "id": "Google.Drive",
@@ -998,7 +1081,8 @@
     "brewId": "google-drive",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/google-drive--v2.png",
-    "color": "#0F9D58"
+    "color": "#0F9D58",
+    "chocoId": "googledrive"
   },
   {
     "id": "Dropbox.Dropbox",
@@ -1009,7 +1093,8 @@
     "brewId": "dropbox",
     "aptId": "dropbox",
     "icon": "https://img.icons8.com/color/96/dropbox.png",
-    "color": "#0061FF"
+    "color": "#0061FF",
+    "chocoId": "dropbox"
   },
   {
     "id": "Microsoft.OneDrive",
@@ -1020,7 +1105,8 @@
     "brewId": "onedrive",
     "aptId": "onedrive",
     "icon": "https://img.icons8.com/color/96/microsoft-onedrive-2019.png",
-    "color": "#0078D4"
+    "color": "#0078D4",
+    "chocoId": "onedrive"
   },
   {
     "id": "Box.BoxDrive",
@@ -1031,7 +1117,8 @@
     "brewId": "box-drive",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/box.png",
-    "color": "#0061D5"
+    "color": "#0061D5",
+    "chocoId": "box-drive"
   },
   {
     "id": "Mega.MEGASync",
@@ -1042,7 +1129,8 @@
     "brewId": "megasync",
     "aptId": "megasync",
     "icon": "https://img.icons8.com/color/96/mega.png",
-    "color": "#D9272E"
+    "color": "#D9272E",
+    "chocoId": "megasync"
   },
   {
     "id": "pCloud.pCloudDrive",
@@ -1053,7 +1141,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/cloud-storage.png",
-    "color": "#2AA3EF"
+    "color": "#2AA3EF",
+    "chocoId": "pcloud"
   },
   {
     "id": "Nextcloud.NextcloudDesktop",
@@ -1064,7 +1153,8 @@
     "brewId": "nextcloud",
     "aptId": "nextcloud-desktop",
     "icon": "https://img.icons8.com/color/96/nextcloud.png",
-    "color": "#0082C9"
+    "color": "#0082C9",
+    "chocoId": "nextcloud-client"
   },
   {
     "id": "Synology.DriveClient",
@@ -1075,7 +1165,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/nas.png",
-    "color": "#3F51B5"
+    "color": "#3F51B5",
+    "chocoId": "synologydrive"
   },
   {
     "id": "OwnCloud.Desktop",
@@ -1086,7 +1177,8 @@
     "brewId": "owncloud",
     "aptId": "owncloud-client",
     "icon": "https://img.icons8.com/color/96/cloud.png",
-    "color": "#005CA9"
+    "color": "#005CA9",
+    "chocoId": "owncloud-client"
   },
   {
     "id": "Resilio.ResilioSync",
@@ -1097,7 +1189,8 @@
     "brewId": "resilio-sync",
     "aptId": "resilio-sync",
     "icon": "https://img.icons8.com/color/96/synchronize.png",
-    "color": "#4CAF50"
+    "color": "#4CAF50",
+    "chocoId": "resilio-sync"
   },
   {
     "id": "Arc.Browser",
@@ -1119,7 +1212,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/globe--v1.png",
-    "color": "#37474F"
+    "color": "#37474F",
+    "chocoId": "zen-browser"
   },
   {
     "id": "JetBrains.PyCharm.Community",
@@ -1130,7 +1224,8 @@
     "brewId": "pycharm-ce",
     "aptId": "pycharm-community",
     "icon": "https://img.icons8.com/color/96/pycharm.png",
-    "color": "#21D789"
+    "color": "#21D789",
+    "chocoId": "pycharm-community"
   },
   {
     "id": "JetBrains.WebStorm",
@@ -1141,7 +1236,8 @@
     "brewId": "webstorm",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/webstorm.png",
-    "color": "#00BCD4"
+    "color": "#00BCD4",
+    "chocoId": "webstorm"
   },
   {
     "id": "JetBrains.CLion",
@@ -1152,7 +1248,8 @@
     "brewId": "clion",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/clion.png",
-    "color": "#7C4DFF"
+    "color": "#7C4DFF",
+    "chocoId": "clion-ide"
   },
   {
     "id": "JetBrains.Rider",
@@ -1163,7 +1260,8 @@
     "brewId": "rider",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/rider.png",
-    "color": "#F50057"
+    "color": "#F50057",
+    "chocoId": "jetbrains-rider"
   },
   {
     "id": "Google.AndroidStudio",
@@ -1174,7 +1272,8 @@
     "brewId": "android-studio",
     "aptId": "android-studio",
     "icon": "https://img.icons8.com/color/96/android-studio--v2.png",
-    "color": "#3DDC84"
+    "color": "#3DDC84",
+    "chocoId": "androidstudio"
   },
   {
     "id": "Oracle.JDK.21",
@@ -1185,7 +1284,8 @@
     "brewId": "openjdk@21",
     "aptId": "openjdk-21-jdk",
     "icon": "https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png",
-    "color": "#EA2D2E"
+    "color": "#EA2D2E",
+    "chocoId": "microsoft-openjdk-21"
   },
   {
     "id": "GoLang.Go",
@@ -1196,7 +1296,8 @@
     "brewId": "go",
     "aptId": "golang",
     "icon": "https://img.icons8.com/color/96/golang.png",
-    "color": "#00ADD8"
+    "color": "#00ADD8",
+    "chocoId": "golang"
   },
   {
     "id": "Rustlang.Rustup",
@@ -1207,7 +1308,8 @@
     "brewId": "rustup",
     "aptId": "rustup",
     "icon": "https://img.icons8.com/color/96/rust-programming-language.png",
-    "color": "#B7410E"
+    "color": "#B7410E",
+    "chocoId": "rustup.install"
   },
   {
     "id": "DBeaver.DBeaver",
@@ -1218,7 +1320,8 @@
     "brewId": "dbeaver-community",
     "aptId": "dbeaver-ce",
     "icon": "https://img.icons8.com/color/96/database-administrator.png",
-    "color": "#5C6BC0"
+    "color": "#5C6BC0",
+    "chocoId": "dbeaver"
   },
   {
     "id": "Insomnia.Insomnia",
@@ -1229,7 +1332,8 @@
     "brewId": "insomnia",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/api.png",
-    "color": "#4000BF"
+    "color": "#4000BF",
+    "chocoId": "insomnia-rest-api-client"
   },
   {
     "id": "Daum.PotPlayer",
@@ -1240,7 +1344,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/play-button-circled.png",
-    "color": "#4CAF50"
+    "color": "#4CAF50",
+    "chocoId": "potplayer"
   },
   {
     "id": "MusicBee.MusicBee",
@@ -1251,7 +1356,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/musical-notes.png",
-    "color": "#673AB7"
+    "color": "#673AB7",
+    "chocoId": "musicbee"
   },
   {
     "id": "Shotcut.Shotcut",
@@ -1262,7 +1368,8 @@
     "brewId": "shotcut",
     "aptId": "shotcut",
     "icon": "https://img.icons8.com/color/96/video-editing.png",
-    "color": "#2E3440"
+    "color": "#2E3440",
+    "chocoId": "shotcut"
   },
   {
     "id": "Kdenlive.Kdenlive",
@@ -1273,7 +1380,8 @@
     "brewId": "kdenlive",
     "aptId": "kdenlive",
     "icon": "https://img.icons8.com/color/96/video-file.png",
-    "color": "#3F51B5"
+    "color": "#3F51B5",
+    "chocoId": "kdenlive"
   },
   {
     "id": "MediaArea.MediaInfo",
@@ -1284,7 +1392,8 @@
     "brewId": "mediainfo",
     "aptId": "mediainfo-gui",
     "icon": "https://img.icons8.com/color/96/info.png",
-    "color": "#009688"
+    "color": "#009688",
+    "chocoId": "mediainfo"
   },
   {
     "id": "Anchor.Anchor",
@@ -1295,7 +1404,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/podcast.png",
-    "color": "#7E57C2"
+    "color": "#7E57C2",
+    "chocoId": "anchor"
   },
   {
     "id": "Asana.Asana",
@@ -1306,7 +1416,8 @@
     "brewId": "asana",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/asana.png",
-    "color": "#F06A6A"
+    "color": "#F06A6A",
+    "chocoId": "asana"
   },
   {
     "id": "ClickUp.ClickUp",
@@ -1317,7 +1428,8 @@
     "brewId": "clickup",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/checkmark--v1.png",
-    "color": "#7B61FF"
+    "color": "#7B61FF",
+    "chocoId": "clickup"
   },
   {
     "id": "Obsidian.Obsidian",
@@ -1328,7 +1440,8 @@
     "brewId": "obsidian",
     "aptId": "obsidian",
     "icon": "https://img.icons8.com/color/96/obsidian.png",
-    "color": "#7C3AED"
+    "color": "#7C3AED",
+    "chocoId": "obsidian"
   },
   {
     "id": "Joplin.Joplin",
@@ -1339,7 +1452,8 @@
     "brewId": "joplin",
     "aptId": "joplin",
     "icon": "https://img.icons8.com/color/96/note.png",
-    "color": "#1565C0"
+    "color": "#1565C0",
+    "chocoId": "joplin"
   },
   {
     "id": "KDiff3.KDiff3",
@@ -1350,7 +1464,8 @@
     "brewId": "kdiff3",
     "aptId": "kdiff3",
     "icon": "https://img.icons8.com/color/96/compare.png",
-    "color": "#5C6BC0"
+    "color": "#5C6BC0",
+    "chocoId": "kdiff3"
   },
   {
     "id": "Notepad++.Notepad++",
@@ -1361,7 +1476,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/notepad-plus-plus.png",
-    "color": "#90C540"
+    "color": "#90C540",
+    "chocoId": "notepadplusplus"
   },
   {
     "id": "Greenshot.Greenshot",
@@ -1372,7 +1488,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/greenshot.png",
-    "color": "#558B2F"
+    "color": "#558B2F",
+    "chocoId": "greenshot"
   },
   {
     "id": "Sysinternals.ProcessExplorer",
@@ -1383,7 +1500,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/task-manager.png",
-    "color": "#455A64"
+    "color": "#455A64",
+    "chocoId": "procexp"
   },
   {
     "id": "CPUID.CPU-Z",
@@ -1394,7 +1512,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/motherboard.png",
-    "color": "#1E88E5"
+    "color": "#1E88E5",
+    "chocoId": "cpu-z"
   },
   {
     "id": "ESET.NOD32",
@@ -1405,7 +1524,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/antivirus.png",
-    "color": "#00A651"
+    "color": "#00A651",
+    "chocoId": "eset-nod32"
   },
   {
     "id": "Avast.AvastFreeAntivirus",
@@ -1416,7 +1536,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/security-checked.png",
-    "color": "#FF7F00"
+    "color": "#FF7F00",
+    "chocoId": "avastfreeantivirus"
   },
   {
     "id": "AVG.AVGAntiVirusFree",
@@ -1427,7 +1548,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/protect.png",
-    "color": "#1976D2"
+    "color": "#1976D2",
+    "chocoId": "avgantivirusfree"
   },
   {
     "id": "Kaspersky.Kaspersky",
@@ -1438,7 +1560,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/security-shield-green.png",
-    "color": "#009688"
+    "color": "#009688",
+    "chocoId": "kaspersky"
   },
   {
     "id": "Sophos.Home",
@@ -1460,7 +1583,8 @@
     "brewId": "pidgin",
     "aptId": "pidgin",
     "icon": "https://img.icons8.com/color/96/speech-bubble.png",
-    "color": "#3F51B5"
+    "color": "#3F51B5",
+    "chocoId": "pidgin"
   },
   {
     "id": "Mattermost.Desktop",
@@ -1471,7 +1595,8 @@
     "brewId": "mattermost",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/mattermost.png",
-    "color": "#0058CC"
+    "color": "#0058CC",
+    "chocoId": "mattermost-desktop"
   },
   {
     "id": "RocketChat.RocketChat",
@@ -1482,7 +1607,8 @@
     "brewId": "rocketchat",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/rocket.png",
-    "color": "#F5455C"
+    "color": "#F5455C",
+    "chocoId": "rocketchat"
   },
   {
     "id": "LINE.LINE",
@@ -1493,7 +1619,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/line-me.png",
-    "color": "#00C300"
+    "color": "#00C300",
+    "chocoId": "line"
   },
   {
     "id": "Mumble.Mumble",
@@ -1504,7 +1631,8 @@
     "brewId": "mumble",
     "aptId": "mumble",
     "icon": "https://img.icons8.com/color/96/microphone.png",
-    "color": "#1565C0"
+    "color": "#1565C0",
+    "chocoId": "mumble"
   },
   {
     "id": "Adobe.XD",
@@ -1559,7 +1687,8 @@
     "brewId": "lunacy",
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/lunacy.png",
-    "color": "#6D28D9"
+    "color": "#6D28D9",
+    "chocoId": "lunacy"
   },
   {
     "id": "RiotGames.Valorant",
@@ -1570,7 +1699,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/valorant.png",
-    "color": "#FF4655"
+    "color": "#FF4655",
+    "chocoId": "valorant"
   },
   {
     "id": "RiotGames.LeagueClient",
@@ -1592,7 +1722,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/origin.png",
-    "color": "#F56C2D"
+    "color": "#F56C2D",
+    "chocoId": "origin"
   },
   {
     "id": "NexusMods.Vortex",
@@ -1603,7 +1734,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/settings.png",
-    "color": "#7C4DFF"
+    "color": "#7C4DFF",
+    "chocoId": "vortex"
   },
   {
     "id": "Logitech.GHub",
@@ -1614,7 +1746,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/joystick-2.png",
-    "color": "#00E5FF"
+    "color": "#00E5FF",
+    "chocoId": "logitech-g-hub"
   },
   {
     "id": "Google.BackupAndSync",
@@ -1625,7 +1758,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/synchronize--v1.png",
-    "color": "#34A853"
+    "color": "#34A853",
+    "chocoId": "google-backup-and-sync"
   },
   {
     "id": "Apple.iCloud",
@@ -1636,7 +1770,8 @@
     "brewId": null,
     "aptId": null,
     "icon": "https://img.icons8.com/color/96/icloud.png",
-    "color": "#42A5F5"
+    "color": "#42A5F5",
+    "chocoId": "icloud"
   },
   {
     "id": "Seafile.SeafileClient",
@@ -1647,7 +1782,8 @@
     "brewId": "seafile-client",
     "aptId": "seafile-gui",
     "icon": "https://img.icons8.com/color/96/cloud-link.png",
-    "color": "#FF8F00"
+    "color": "#FF8F00",
+    "chocoId": "seafile-client"
   },
   {
     "id": "Insync.Insync",
@@ -1658,7 +1794,8 @@
     "brewId": "insync",
     "aptId": "insync",
     "icon": "https://img.icons8.com/color/96/cloud-sync.png",
-    "color": "#1976D2"
+    "color": "#1976D2",
+    "chocoId": "insync"
   },
   {
     "id": "Koofr.Koofr",

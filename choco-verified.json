@@ -1,0 +1,914 @@
+﻿[
+    {
+        "id":  "Google.Chrome",
+        "name":  "Google Chrome",
+        "chocoId":  "googlechrome",
+        "candidates":  "googlechrome,google-chrome,chrome"
+    },
+    {
+        "id":  "Microsoft.Edge",
+        "name":  "Microsoft Edge",
+        "chocoId":  "microsoft-edge",
+        "candidates":  "microsoft-edge,edge"
+    },
+    {
+        "id":  "Brave.Brave",
+        "name":  "Brave",
+        "chocoId":  "brave",
+        "candidates":  "brave,brave-browser,brave-brave"
+    },
+    {
+        "id":  "Mozilla.Firefox",
+        "name":  "Mozilla Firefox",
+        "chocoId":  "firefox",
+        "candidates":  "firefox,mozilla-firefox"
+    },
+    {
+        "id":  "Opera.Opera",
+        "name":  "Opera",
+        "chocoId":  "opera",
+        "candidates":  "opera,opera-opera"
+    },
+    {
+        "id":  "Vivaldi.Vivaldi",
+        "name":  "Vivaldi",
+        "chocoId":  "vivaldi",
+        "candidates":  "vivaldi,vivaldi-vivaldi"
+    },
+    {
+        "id":  "TorProject.TorBrowser",
+        "name":  "Tor Browser",
+        "chocoId":  "tor-browser",
+        "candidates":  "tor-browser,torproject-torbrowser,torbrowser"
+    },
+    {
+        "id":  "Waterfox.Waterfox",
+        "name":  "Waterfox",
+        "chocoId":  "waterfox",
+        "candidates":  "waterfox,waterfox-waterfox"
+    },
+    {
+        "id":  "Maxthon.Maxthon",
+        "name":  "Maxthon",
+        "chocoId":  "maxthon",
+        "candidates":  "maxthon,maxthon-maxthon"
+    },
+    {
+        "id":  "Yandex.Browser",
+        "name":  "Yandex Browser",
+        "chocoId":  "yandex-browser",
+        "candidates":  "yandexbrowser,yandex,yandex-browser,browser"
+    },
+    {
+        "id":  "Microsoft.VisualStudioCode",
+        "name":  "Visual Studio Code",
+        "chocoId":  "vscode",
+        "candidates":  "vscode,visual-studio-code,microsoft-visualstudiocode,visualstudiocode"
+    },
+    {
+        "id":  "JetBrains.IntelliJIDEA.Community",
+        "name":  "IntelliJ IDEA Community",
+        "chocoId":  "intellijidea-community",
+        "candidates":  "intellijidea-community,intellij-idea-ce,intellij-idea-community,jetbrains-intellijidea-community,community"
+    },
+    {
+        "id":  "Git.Git",
+        "name":  "Git",
+        "chocoId":  "git",
+        "candidates":  "git,git-git"
+    },
+    {
+        "id":  "OpenJS.NodeJS",
+        "name":  "Node.js",
+        "chocoId":  "nodejs",
+        "candidates":  "nodejs,node,node-js,openjs-nodejs"
+    },
+    {
+        "id":  "Python.Python.3.12",
+        "name":  "Python",
+        "chocoId":  "python",
+        "candidates":  "python,python-python-3-12,12,python-3-12"
+    },
+    {
+        "id":  "Docker.DockerDesktop",
+        "name":  "Docker Desktop",
+        "chocoId":  "docker-desktop",
+        "candidates":  "docker-desktop,docker,docker-dockerdesktop,dockerdesktop"
+    },
+    {
+        "id":  "Postman.Postman",
+        "name":  "Postman",
+        "chocoId":  "postman",
+        "candidates":  "postman,postman-postman"
+    },
+    {
+        "id":  "FileZilla.FileZilla",
+        "name":  "FileZilla",
+        "chocoId":  "filezilla",
+        "candidates":  "filezilla,filezilla-filezilla"
+    },
+    {
+        "id":  "GitHub.GitHubDesktop",
+        "name":  "GitHub Desktop",
+        "chocoId":  "github-desktop",
+        "candidates":  "github-desktop,github,github-githubdesktop,githubdesktop"
+    },
+    {
+        "id":  "SublimeHQ.SublimeText.4",
+        "name":  "Sublime Text",
+        "chocoId":  "sublimetext4",
+        "candidates":  "sublimetext4,sublime-text,sublimehq-sublimetext-4,4,sublimetext-4"
+    },
+    {
+        "id":  "VideoLAN.VLC",
+        "name":  "VLC",
+        "chocoId":  "vlc",
+        "candidates":  "vlc,videolan-vlc"
+    },
+    {
+        "id":  "Spotify.Spotify",
+        "name":  "Spotify",
+        "chocoId":  "spotify",
+        "candidates":  "spotify,spotify-spotify"
+    },
+    {
+        "id":  "OBSProject.OBSStudio",
+        "name":  "OBS Studio",
+        "chocoId":  "obs-studio",
+        "candidates":  "obs-studio,obs,obsproject-obsstudio,obsstudio"
+    },
+    {
+        "id":  "Audacity.Audacity",
+        "name":  "Audacity",
+        "chocoId":  "audacity",
+        "candidates":  "audacity,audacity-audacity"
+    },
+    {
+        "id":  "HandBrake.HandBrake",
+        "name":  "HandBrake",
+        "chocoId":  "handbrake",
+        "candidates":  "handbrake,handbrake-handbrake"
+    },
+    {
+        "id":  "Plex.Plex",
+        "name":  "Plex",
+        "chocoId":  "plex",
+        "candidates":  "plex,plex-plex"
+    },
+    {
+        "id":  "Kodi.Kodi",
+        "name":  "Kodi",
+        "chocoId":  "kodi",
+        "candidates":  "kodi,kodi-kodi,xbmcfoundation-kodi"
+    },
+    {
+        "id":  "AIMP.AIMP",
+        "name":  "AIMP",
+        "chocoId":  "aimp",
+        "candidates":  "aimp,aimp-aimp"
+    },
+    {
+        "id":  "MPV.MPV",
+        "name":  "mpv",
+        "chocoId":  "mpv",
+        "candidates":  "mpv,mpv-mpv,mpvnet-mpvnet,mpvnet"
+    },
+    {
+        "id":  "Foobar2000.Foobar2000",
+        "name":  "foobar2000",
+        "chocoId":  "foobar2000",
+        "candidates":  "foobar2000,foobar2000-foobar2000,peterpawlowski-foobar2000"
+    },
+    {
+        "id":  "Notion.Notion",
+        "name":  "Notion",
+        "chocoId":  "notion",
+        "candidates":  "notion,notion-notion"
+    },
+    {
+        "id":  "SlackTechnologies.Slack",
+        "name":  "Slack",
+        "chocoId":  "slack",
+        "candidates":  "slack,slacktechnologies-slack"
+    },
+    {
+        "id":  "Discord.Discord",
+        "name":  "Discord",
+        "chocoId":  "discord",
+        "candidates":  "discord,discord-discord"
+    },
+    {
+        "id":  "Zoom.Zoom",
+        "name":  "Zoom",
+        "chocoId":  "zoom",
+        "candidates":  "zoom,zoom-zoom"
+    },
+    {
+        "id":  "Microsoft.Teams",
+        "name":  "Microsoft Teams",
+        "chocoId":  "microsoft-teams",
+        "candidates":  "microsoft-teams,teams"
+    },
+    {
+        "id":  "Trello.Trello",
+        "name":  "Trello",
+        "chocoId":  null,
+        "candidates":  "trello,trello-trello,atlassian-trello"
+    },
+    {
+        "id":  "Doist.Todoist",
+        "name":  "Todoist",
+        "chocoId":  "todoist",
+        "candidates":  "todoist,doist-todoist"
+    },
+    {
+        "id":  "Evernote.Evernote",
+        "name":  "Evernote",
+        "chocoId":  "evernote",
+        "candidates":  "evernote,evernote-evernote"
+    },
+    {
+        "id":  "TheDocumentFoundation.LibreOffice",
+        "name":  "LibreOffice",
+        "chocoId":  "libreoffice-fresh",
+        "candidates":  "libreoffice-fresh,libreoffice,thedocumentfoundation-libreoffice"
+    },
+    {
+        "id":  "Apache.OpenOffice",
+        "name":  "Apache OpenOffice",
+        "chocoId":  "openoffice",
+        "candidates":  "openoffice,apache-openoffice"
+    },
+    {
+        "id":  "RARLab.WinRAR",
+        "name":  "WinRAR",
+        "chocoId":  "winrar",
+        "candidates":  "winrar,rarlab-winrar"
+    },
+    {
+        "id":  "7zip.7zip",
+        "name":  "7-Zip",
+        "chocoId":  "7zip",
+        "candidates":  "7zip,p7zip,7-zip,7zip-7zip"
+    },
+    {
+        "id":  "WinSCP.WinSCP",
+        "name":  "WinSCP",
+        "chocoId":  "winscp",
+        "candidates":  "winscp,winscp-winscp"
+    },
+    {
+        "id":  "voidtools.Everything",
+        "name":  "Everything",
+        "chocoId":  "everything",
+        "candidates":  "everything,voidtools-everything"
+    },
+    {
+        "id":  "Microsoft.PowerToys",
+        "name":  "PowerToys",
+        "chocoId":  "powertoys",
+        "candidates":  "powertoys,microsoft-powertoys"
+    },
+    {
+        "id":  "CrystalDewWorld.CrystalDiskInfo",
+        "name":  "CrystalDiskInfo",
+        "chocoId":  "crystaldiskinfo",
+        "candidates":  "crystaldiskinfo,crystaldewworld-crystaldiskinfo"
+    },
+    {
+        "id":  "qBittorrent.qBittorrent",
+        "name":  "qBittorrent",
+        "chocoId":  "qbittorrent",
+        "candidates":  "qbittorrent,qbittorrent-qbittorrent"
+    },
+    {
+        "id":  "Balena.Etcher",
+        "name":  "balenaEtcher",
+        "chocoId":  "etcher",
+        "candidates":  "etcher,balenaetcher,balena-etcher"
+    },
+    {
+        "id":  "Rufus.Rufus",
+        "name":  "Rufus",
+        "chocoId":  "rufus",
+        "candidates":  "rufus,rufus-rufus"
+    },
+    {
+        "id":  "ShareX.ShareX",
+        "name":  "ShareX",
+        "chocoId":  "sharex",
+        "candidates":  "sharex,sharex-sharex"
+    },
+    {
+        "id":  "Malwarebytes.Malwarebytes",
+        "name":  "Malwarebytes",
+        "chocoId":  "malwarebytes",
+        "candidates":  "malwarebytes,malwarebytes-malwarebytes"
+    },
+    {
+        "id":  "Bitwarden.Bitwarden",
+        "name":  "Bitwarden",
+        "chocoId":  "bitwarden",
+        "candidates":  "bitwarden,bitwarden-bitwarden"
+    },
+    {
+        "id":  "AgileBits.1Password",
+        "name":  "1Password",
+        "chocoId":  "1password",
+        "candidates":  "1password,agilebits-1password"
+    },
+    {
+        "id":  "KeePassXCTeam.KeePassXC",
+        "name":  "KeePassXC",
+        "chocoId":  "keepassxc",
+        "candidates":  "keepassxc,keepassxcteam-keepassxc"
+    },
+    {
+        "id":  "OpenVPNTechnologies.OpenVPNConnect",
+        "name":  "OpenVPN Connect",
+        "chocoId":  "openvpn-connect",
+        "candidates":  "openvpn-connect,openvpntechnologies-openvpnconnect,openvpnconnect"
+    },
+    {
+        "id":  "Proton.ProtonVPN",
+        "name":  "Proton VPN",
+        "chocoId":  "protonvpn",
+        "candidates":  "protonvpn,proton-vpn,proton-protonvpn"
+    },
+    {
+        "id":  "NordSecurity.NordVPN",
+        "name":  "NordVPN",
+        "chocoId":  "nordvpn",
+        "candidates":  "nordvpn,nordsecurity-nordvpn"
+    },
+    {
+        "id":  "WiresharkFoundation.Wireshark",
+        "name":  "Wireshark",
+        "chocoId":  "wireshark",
+        "candidates":  "wireshark,wiresharkfoundation-wireshark"
+    },
+    {
+        "id":  "GnuPG.Gpg4win",
+        "name":  "Gpg4win",
+        "chocoId":  "gpg4win",
+        "candidates":  "gpg4win,gnupg,gnupg-gpg4win"
+    },
+    {
+        "id":  "Cisco.AnyConnect",
+        "name":  "Cisco AnyConnect",
+        "chocoId":  "cisco-anyconnect",
+        "candidates":  "cisco-anyconnect,anyconnect"
+    },
+    {
+        "id":  "Telegram.TelegramDesktop",
+        "name":  "Telegram Desktop",
+        "chocoId":  "telegram",
+        "candidates":  "telegram,telegram-desktop,telegram-telegramdesktop,telegramdesktop"
+    },
+    {
+        "id":  "WhatsApp.WhatsApp",
+        "name":  "WhatsApp",
+        "chocoId":  "whatsapp",
+        "candidates":  "whatsapp,whatsapp-whatsapp"
+    },
+    {
+        "id":  "Viber.Viber",
+        "name":  "Viber",
+        "chocoId":  "viber",
+        "candidates":  "viber,viber-viber"
+    },
+    {
+        "id":  "OpenWhisperSystems.Signal",
+        "name":  "Signal",
+        "chocoId":  "signal",
+        "candidates":  "signal,openwhispersystems-signal"
+    },
+    {
+        "id":  "Mozilla.Thunderbird",
+        "name":  "Thunderbird",
+        "chocoId":  "thunderbird",
+        "candidates":  "thunderbird,mozilla-thunderbird"
+    },
+    {
+        "id":  "Microsoft.Skype",
+        "name":  "Skype",
+        "chocoId":  "skype",
+        "candidates":  "skype,microsoft-skype"
+    },
+    {
+        "id":  "Element.Element",
+        "name":  "Element",
+        "chocoId":  "element-desktop",
+        "candidates":  "element-desktop,element,element-element"
+    },
+    {
+        "id":  "TeamSpeakSystems.TeamSpeakClient",
+        "name":  "TeamSpeak",
+        "chocoId":  "teamspeak",
+        "candidates":  "teamspeak,teamspeak-client,teamspeaksystems-teamspeakclient,teamspeakclient"
+    },
+    {
+        "id":  "Tencent.WeChat",
+        "name":  "WeChat",
+        "chocoId":  "wechat",
+        "candidates":  "wechat,tencent-wechat"
+    },
+    {
+        "id":  "Franz.Franz",
+        "name":  "Franz",
+        "chocoId":  "franz",
+        "candidates":  "franz,franz-franz"
+    },
+    {
+        "id":  "Figma.Figma",
+        "name":  "Figma",
+        "chocoId":  "figma",
+        "candidates":  "figma,figma-figma"
+    },
+    {
+        "id":  "Canva.Canva",
+        "name":  "Canva",
+        "chocoId":  null,
+        "candidates":  "canva,canva-canva"
+    },
+    {
+        "id":  "Adobe.Photoshop",
+        "name":  "Adobe Photoshop",
+        "chocoId":  null,
+        "candidates":  "adobe-photoshop,photoshop"
+    },
+    {
+        "id":  "Adobe.Illustrator",
+        "name":  "Adobe Illustrator",
+        "chocoId":  null,
+        "candidates":  "adobe-illustrator,illustrator"
+    },
+    {
+        "id":  "Inkscape.Inkscape",
+        "name":  "Inkscape",
+        "chocoId":  "inkscape",
+        "candidates":  "inkscape,inkscape-inkscape"
+    },
+    {
+        "id":  "KDE.Krita",
+        "name":  "Krita",
+        "chocoId":  "krita",
+        "candidates":  "krita,kde-krita"
+    },
+    {
+        "id":  "BlenderFoundation.Blender",
+        "name":  "Blender",
+        "chocoId":  "blender",
+        "candidates":  "blender,blenderfoundation-blender"
+    },
+    {
+        "id":  "Sketch.Sketch",
+        "name":  "Sketch",
+        "chocoId":  null,
+        "candidates":  "sketch,sketch-sketch"
+    },
+    {
+        "id":  "Serif.AffinityPhoto2",
+        "name":  "Affinity Photo 2",
+        "chocoId":  null,
+        "candidates":  "affinity-photo-2,serif-affinityphoto2,affinityphoto2"
+    },
+    {
+        "id":  "Corel.CorelDRAW.GraphicsSuite",
+        "name":  "CorelDRAW Graphics Suite",
+        "chocoId":  null,
+        "candidates":  "coreldraw-graphics-suite,corel-coreldraw-graphicssuite,graphicssuite,coreldraw-graphicssuite"
+    },
+    {
+        "id":  "Valve.Steam",
+        "name":  "Steam",
+        "chocoId":  "steam",
+        "candidates":  "steam,valve-steam"
+    },
+    {
+        "id":  "EpicGames.EpicGamesLauncher",
+        "name":  "Epic Games Launcher",
+        "chocoId":  "epicgameslauncher",
+        "candidates":  "epicgameslauncher,epic-games,epic-games-launcher,epicgames-epicgameslauncher"
+    },
+    {
+        "id":  "GOG.Galaxy",
+        "name":  "GOG Galaxy",
+        "chocoId":  "goggalaxy",
+        "candidates":  "goggalaxy,gog-galaxy,galaxy"
+    },
+    {
+        "id":  "Ubisoft.Connect",
+        "name":  "Ubisoft Connect",
+        "chocoId":  "ubisoft-connect",
+        "candidates":  "ubisoft-connect,connect"
+    },
+    {
+        "id":  "ElectronicArts.EADesktop",
+        "name":  "EA App",
+        "chocoId":  "ea-app",
+        "candidates":  "ea-app,electronicarts-eadesktop,eadesktop"
+    },
+    {
+        "id":  "Blizzard.BattleNet",
+        "name":  "Battle.net",
+        "chocoId":  "battle.net",
+        "candidates":  "battle.net,battle-net,blizzard-battlenet,battlenet"
+    },
+    {
+        "id":  "Mojang.MinecraftLauncher",
+        "name":  "Minecraft Launcher",
+        "chocoId":  "minecraft-launcher",
+        "candidates":  "minecraft-launcher,mojang-minecraftlauncher,minecraftlauncher"
+    },
+    {
+        "id":  "ItchIo.Itch",
+        "name":  "itch.io",
+        "chocoId":  "itch",
+        "candidates":  "itch,itch-io,itchio-itch"
+    },
+    {
+        "id":  "HeroicGamesLauncher.HeroicGamesLauncher",
+        "name":  "Heroic Games Launcher",
+        "chocoId":  "heroic-games-launcher",
+        "candidates":  "heroic,heroic-games-launcher,heroicgameslauncher-heroicgameslauncher,heroicgameslauncher"
+    },
+    {
+        "id":  "RiotGames.LeagueOfLegends",
+        "name":  "League of Legends",
+        "chocoId":  "league-of-legends",
+        "candidates":  "league-of-legends,riotgames-leagueoflegends,leagueoflegends"
+    },
+    {
+        "id":  "Google.Drive",
+        "name":  "Google Drive",
+        "chocoId":  "googledrive",
+        "candidates":  "googledrive,google-drive,drive"
+    },
+    {
+        "id":  "Dropbox.Dropbox",
+        "name":  "Dropbox",
+        "chocoId":  "dropbox",
+        "candidates":  "dropbox,dropbox-dropbox"
+    },
+    {
+        "id":  "Microsoft.OneDrive",
+        "name":  "OneDrive",
+        "chocoId":  "onedrive",
+        "candidates":  "onedrive,microsoft-onedrive"
+    },
+    {
+        "id":  "Box.BoxDrive",
+        "name":  "Box Drive",
+        "chocoId":  "box-drive",
+        "candidates":  "box-drive,box-boxdrive,boxdrive"
+    },
+    {
+        "id":  "Mega.MEGASync",
+        "name":  "MEGA Sync",
+        "chocoId":  "megasync",
+        "candidates":  "megasync,mega-sync,mega-megasync"
+    },
+    {
+        "id":  "pCloud.pCloudDrive",
+        "name":  "pCloud Drive",
+        "chocoId":  null,
+        "candidates":  "pcloud-drive,pcloud-pclouddrive,pclouddrive"
+    },
+    {
+        "id":  "Nextcloud.NextcloudDesktop",
+        "name":  "Nextcloud Desktop",
+        "chocoId":  "nextcloud-client",
+        "candidates":  "nextcloud-client,nextcloud,nextcloud-desktop,nextcloud-nextclouddesktop,nextclouddesktop"
+    },
+    {
+        "id":  "Synology.DriveClient",
+        "name":  "Synology Drive Client",
+        "chocoId":  null,
+        "candidates":  "synology-drive-client,synology-driveclient,driveclient"
+    },
+    {
+        "id":  "OwnCloud.Desktop",
+        "name":  "ownCloud Desktop",
+        "chocoId":  "owncloud-client",
+        "candidates":  "owncloud-client,owncloud,owncloud-desktop,desktop"
+    },
+    {
+        "id":  "Resilio.ResilioSync",
+        "name":  "Resilio Sync",
+        "chocoId":  "resilio-sync",
+        "candidates":  "resilio-sync,resilio-resiliosync,resiliosync"
+    },
+    {
+        "id":  "Arc.Browser",
+        "name":  "Arc Browser",
+        "chocoId":  null,
+        "candidates":  "arc-browser,arc,thebrowsercompany-arc"
+    },
+    {
+        "id":  "ZenTeam.ZenBrowser",
+        "name":  "Zen Browser",
+        "chocoId":  "zen-browser",
+        "candidates":  "zen-browser,zenteam-zenbrowser,zenbrowser"
+    },
+    {
+        "id":  "JetBrains.PyCharm.Community",
+        "name":  "PyCharm Community",
+        "chocoId":  "pycharm-community",
+        "candidates":  "pycharm-community,pycharm-ce,jetbrains-pycharm-community,community"
+    },
+    {
+        "id":  "JetBrains.WebStorm",
+        "name":  "WebStorm",
+        "chocoId":  "webstorm",
+        "candidates":  "webstorm,jetbrains-webstorm"
+    },
+    {
+        "id":  "JetBrains.CLion",
+        "name":  "CLion",
+        "chocoId":  "clion-ide",
+        "candidates":  "clion-ide,clion,jetbrains-clion"
+    },
+    {
+        "id":  "JetBrains.Rider",
+        "name":  "Rider",
+        "chocoId":  "jetbrains-rider",
+        "candidates":  "jetbrains-rider,rider"
+    },
+    {
+        "id":  "Google.AndroidStudio",
+        "name":  "Android Studio",
+        "chocoId":  "androidstudio",
+        "candidates":  "androidstudio,android-studio,google-androidstudio"
+    },
+    {
+        "id":  "Oracle.JDK.21",
+        "name":  "Oracle JDK 21",
+        "chocoId":  null,
+        "candidates":  "jdk21,openjdk@21,oracle-jdk-21,21,jdk-21"
+    },
+    {
+        "id":  "GoLang.Go",
+        "name":  "Go",
+        "chocoId":  "golang",
+        "candidates":  "golang,go,golang-go"
+    },
+    {
+        "id":  "Rustlang.Rustup",
+        "name":  "Rust",
+        "chocoId":  "rustup.install",
+        "candidates":  "rustup.install,rustup,rust,rustlang-rustup"
+    },
+    {
+        "id":  "DBeaver.DBeaver",
+        "name":  "DBeaver",
+        "chocoId":  "dbeaver",
+        "candidates":  "dbeaver,dbeaver-community,dbeaver-dbeaver"
+    },
+    {
+        "id":  "Insomnia.Insomnia",
+        "name":  "Insomnia",
+        "chocoId":  "insomnia-rest-api-client",
+        "candidates":  "insomnia-rest-api-client,insomnia,insomnia-insomnia,kong-insomnia"
+    },
+    {
+        "id":  "Daum.PotPlayer",
+        "name":  "PotPlayer",
+        "chocoId":  "potplayer",
+        "candidates":  "potplayer,daum-potplayer"
+    },
+    {
+        "id":  "MusicBee.MusicBee",
+        "name":  "MusicBee",
+        "chocoId":  "musicbee",
+        "candidates":  "musicbee,musicbee-musicbee"
+    },
+    {
+        "id":  "Shotcut.Shotcut",
+        "name":  "Shotcut",
+        "chocoId":  "shotcut",
+        "candidates":  "shotcut,shotcut-shotcut,meltytech-shotcut"
+    },
+    {
+        "id":  "Kdenlive.Kdenlive",
+        "name":  "Kdenlive",
+        "chocoId":  "kdenlive",
+        "candidates":  "kdenlive,kdenlive-kdenlive,kde-kdenlive"
+    },
+    {
+        "id":  "MediaArea.MediaInfo",
+        "name":  "MediaInfo",
+        "chocoId":  "mediainfo",
+        "candidates":  "mediainfo-gui,mediainfo,mediaarea-mediainfo,mediaarea-mediainfo-gui,gui"
+    },
+    {
+        "id":  "Anchor.Anchor",
+        "name":  "Anchor",
+        "chocoId":  "anchor",
+        "candidates":  "anchor,anchor-anchor,spotify-anchor"
+    },
+    {
+        "id":  "Asana.Asana",
+        "name":  "Asana",
+        "chocoId":  "asana",
+        "candidates":  "asana,asana-asana"
+    },
+    {
+        "id":  "ClickUp.ClickUp",
+        "name":  "ClickUp",
+        "chocoId":  "clickup",
+        "candidates":  "clickup,clickup-clickup"
+    },
+    {
+        "id":  "Obsidian.Obsidian",
+        "name":  "Obsidian",
+        "chocoId":  "obsidian",
+        "candidates":  "obsidian,obsidian-obsidian"
+    },
+    {
+        "id":  "Joplin.Joplin",
+        "name":  "Joplin",
+        "chocoId":  "joplin",
+        "candidates":  "joplin,joplin-joplin"
+    },
+    {
+        "id":  "KDiff3.KDiff3",
+        "name":  "KDiff3",
+        "chocoId":  "kdiff3",
+        "candidates":  "kdiff3,kdiff3-kdiff3,kde-kdiff3"
+    },
+    {
+        "id":  "Notepad++.Notepad++",
+        "name":  "Notepad++",
+        "chocoId":  "notepadplusplus",
+        "candidates":  "notepadplusplus,notepadplusplus-notepadplusplus"
+    },
+    {
+        "id":  "Greenshot.Greenshot",
+        "name":  "Greenshot",
+        "chocoId":  "greenshot",
+        "candidates":  "greenshot,greenshot-greenshot"
+    },
+    {
+        "id":  "Sysinternals.ProcessExplorer",
+        "name":  "Process Explorer",
+        "chocoId":  "procexp",
+        "candidates":  "procexp,process-explorer,sysinternals-processexplorer,microsoft-sysinternals-processexplorer,processexplorer"
+    },
+    {
+        "id":  "CPUID.CPU-Z",
+        "name":  "CPU-Z",
+        "chocoId":  "cpu-z",
+        "candidates":  "cpu-z,cpuid-cpu-z"
+    },
+    {
+        "id":  "ESET.NOD32",
+        "name":  "ESET NOD32",
+        "chocoId":  "eset-nod32",
+        "candidates":  "eset-nod32,nod32"
+    },
+    {
+        "id":  "Avast.AvastFreeAntivirus",
+        "name":  "Avast Free Antivirus",
+        "chocoId":  "avastfreeantivirus",
+        "candidates":  "avastfreeantivirus,avast-free-antivirus,avast-avastfreeantivirus"
+    },
+    {
+        "id":  "AVG.AVGAntiVirusFree",
+        "name":  "AVG AntiVirus Free",
+        "chocoId":  "avgantivirusfree",
+        "candidates":  "avgantivirusfree,avg-antivirus-free,avg-avgantivirusfree"
+    },
+    {
+        "id":  "Kaspersky.Kaspersky",
+        "name":  "Kaspersky",
+        "chocoId":  "kaspersky",
+        "candidates":  "kaspersky,kaspersky-kaspersky"
+    },
+    {
+        "id":  "Sophos.Home",
+        "name":  "Sophos Home",
+        "chocoId":  null,
+        "candidates":  "sophos-home,home"
+    },
+    {
+        "id":  "Pidgin.Pidgin",
+        "name":  "Pidgin",
+        "chocoId":  "pidgin",
+        "candidates":  "pidgin,pidgin-pidgin"
+    },
+    {
+        "id":  "Mattermost.Desktop",
+        "name":  "Mattermost Desktop",
+        "chocoId":  "mattermost-desktop",
+        "candidates":  "mattermost-desktop,mattermost,desktop"
+    },
+    {
+        "id":  "RocketChat.RocketChat",
+        "name":  "Rocket.Chat",
+        "chocoId":  "rocketchat",
+        "candidates":  "rocketchat,rocket-chat,rocketchat-rocketchat"
+    },
+    {
+        "id":  "LINE.LINE",
+        "name":  "LINE",
+        "chocoId":  "line",
+        "candidates":  "line,line-line"
+    },
+    {
+        "id":  "Mumble.Mumble",
+        "name":  "Mumble",
+        "chocoId":  "mumble",
+        "candidates":  "mumble,mumble-mumble"
+    },
+    {
+        "id":  "Adobe.XD",
+        "name":  "Adobe XD",
+        "chocoId":  null,
+        "candidates":  "adobe-xd,xd"
+    },
+    {
+        "id":  "Adobe.InDesign",
+        "name":  "Adobe InDesign",
+        "chocoId":  null,
+        "candidates":  "adobe-indesign,indesign"
+    },
+    {
+        "id":  "Adobe.Lightroom",
+        "name":  "Adobe Lightroom",
+        "chocoId":  null,
+        "candidates":  "adobe-lightroom,lightroom"
+    },
+    {
+        "id":  "Photopea.Photopea",
+        "name":  "Photopea Desktop",
+        "chocoId":  null,
+        "candidates":  "photopea-desktop,photopea-photopea,photopea"
+    },
+    {
+        "id":  "Lunacy.Lunacy",
+        "name":  "Lunacy",
+        "chocoId":  "lunacy",
+        "candidates":  "lunacy,lunacy-lunacy,icons8-lunacy"
+    },
+    {
+        "id":  "RiotGames.Valorant",
+        "name":  "VALORANT",
+        "chocoId":  "valorant",
+        "candidates":  "valorant,riotgames-valorant"
+    },
+    {
+        "id":  "RiotGames.LeagueClient",
+        "name":  "League Client",
+        "chocoId":  null,
+        "candidates":  "league-client,riotgames-leagueclient,leagueclient"
+    },
+    {
+        "id":  "ElectronicArts.Origin",
+        "name":  "Origin",
+        "chocoId":  "origin",
+        "candidates":  "origin,electronicarts-origin"
+    },
+    {
+        "id":  "NexusMods.Vortex",
+        "name":  "Vortex Mod Manager",
+        "chocoId":  "vortex",
+        "candidates":  "vortex,vortex-mod-manager,nexusmods-vortex,blacktreegamingltd-vortex"
+    },
+    {
+        "id":  "Logitech.GHub",
+        "name":  "Logitech G HUB",
+        "chocoId":  "logitech-g-hub",
+        "candidates":  "logitech-ghub,logitech-g-hub,ghub"
+    },
+    {
+        "id":  "Google.BackupAndSync",
+        "name":  "Google Backup and Sync",
+        "chocoId":  "google-backup-and-sync",
+        "candidates":  "google-backup-and-sync,google-backupandsync,backupandsync"
+    },
+    {
+        "id":  "Apple.iCloud",
+        "name":  "iCloud",
+        "chocoId":  "icloud",
+        "candidates":  "icloud,apple-icloud"
+    },
+    {
+        "id":  "Seafile.SeafileClient",
+        "name":  "Seafile Client",
+        "chocoId":  "seafile-client",
+        "candidates":  "seafile-client,seafile-seafileclient,seafile-seafile,seafile"
+    },
+    {
+        "id":  "Insync.Insync",
+        "name":  "Insync",
+        "chocoId":  "insync",
+        "candidates":  "insync,insync-insync"
+    },
+    {
+        "id":  "Koofr.Koofr",
+        "name":  "Koofr",
+        "chocoId":  null,
+        "candidates":  "koofr,koofr-koofr"
+    }
+]
